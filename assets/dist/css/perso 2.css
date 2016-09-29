@@ -1,0 +1,64 @@
+#logo_header{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 45%;
+}
+
+.img_page{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 250px;
+    left: 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.titre_img_page{
+    line-height: 6em;
+}
+
+form .form-group p{
+    color: red;
+}
+
+form#form_candidater{
+    padding-top: 30px;
+}
+
+.banniere {
+    vertical-align: middle;
+    text-align: right;
+}
+
+.btn-warning {
+    background-color: #FF5000;
+}
+.fa {
+    font-size: 30px;
+    color: #555555;
+}
+
+.fa:hover {
+    color: #FF5000;
+}
+
+.navbar-inverse {
+    border-radius: 0;
+}
+
+.dropdown-menu{
+    background-color: #555555;
+}
+.dropdown-menu > li > a{
+    color: #fcfcfc;
+    padding-bottom: 10px;
+}
+
+.dropdown-menu > li > a:hover{
+    background-color: transparent;
+    color: #d15b14;
+}
