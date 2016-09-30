@@ -1,70 +1,31 @@
-###################
-What is CodeIgniter
-###################
+# Synopsis # 
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+L’application est une site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.
 
-*******************
-Release Information
-*******************
+# Code Example # 
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+![bloggif_57ee3193171f7.gif](https://bitbucket.org/repo/yrpRRd/images/1439803861-bloggif_57ee3193171f7.gif)
+ 	
+# Motivation # 
 
-**************************
-Changelog and New Features
-**************************
+Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+En effet, le site précédemment créé, avait été développé à la main et ne répondait pas aux normes actuelles régissant les sites internet. De plus, il n’était pas cross-plateforme ce qui ne répondait pas aux différents besoins utilisateurs.
 
-*******************
-Server Requirements
-*******************
+Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphère du développement. 
 
-PHP version 5.4 or newer is recommended.
+# Installation # 
 
-It should work on 5.2.4 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+L’application étant un site internet cross-plateforme, il ne nécessite qu’un accès à internet et d’un navigateur.
 
-************
-Installation
-************
+# Tests # 
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+![accueil.gif](https://bitbucket.org/repo/yrpRRd/images/3418877412-accueil.gif)
 
-*******
-License
-*******
+# Contributors # 
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Nathan ABRAHAM, Mickaël PEREIRA, Jean François JUNG
 
-*********
-Resources
-*********
+# License # 
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Bootstrap, CodeIgniter, Ckeditor
