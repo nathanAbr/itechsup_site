@@ -1,12 +1,18 @@
-**# # Synopsis # #** 
+####################
+**### Synopsis ###** 
+####################
 
 *L’application est une site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.*
 
-**# # Code Example # #** 
+########################
+**### Code Example ###** 
+########################
 
 ![bloggif_57ee3193171f7.gif](https://bitbucket.org/repo/yrpRRd/images/1439803861-bloggif_57ee3193171f7.gif)
- 	
-**# # Motivation # #** 
+
+###################### 	
+**### Motivation ###** 
+######################
 
 *Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.*
 
