@@ -8,11 +8,11 @@
  	
 **# # Motivation # #** 
 
-*Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.
+*Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.*
 
-En effet, le site précédemment créé, avait été développé à la main et ne répondait pas aux normes actuelles régissant les sites internet. De plus, il n’était pas cross-plateforme ce qui ne répondait pas aux différents besoins utilisateurs.
+*En effet, le site précédemment créé, avait été développé à la main et ne répondait pas aux normes actuelles régissant les sites internet. De plus, il n’était pas cross-plateforme ce qui ne répondait pas aux différents besoins utilisateurs.*
 
-Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphère du développement.* 
+*Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphère du développement.* 
 
 **# # Installation # #** 
 
