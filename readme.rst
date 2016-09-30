@@ -1,17 +1,17 @@
 ####################
-**### Synopsis ###** 
+**Synopsis** 
 ####################
 
 *L’application est une site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.*
 
 ########################
-**### Code Example ###** 
+**Code Example** 
 ########################
 
 ![bloggif_57ee3193171f7.gif](https://bitbucket.org/repo/yrpRRd/images/1439803861-bloggif_57ee3193171f7.gif)
 
 ###################### 	
-**### Motivation ###** 
+**Motivation** 
 ######################
 
 *Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.*
@@ -20,18 +20,23 @@
 
 *Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphère du développement.* 
 
-**# # Installation # #** 
+################
+**Installation**
+################ 
 
 *L’application étant un site internet cross-plateforme, il ne nécessite qu’un accès à internet et d’un navigateur.*
 
-**# # Tests # #** 
+**Tests** 
 
 ![accueil.gif](https://bitbucket.org/repo/yrpRRd/images/3418877412-accueil.gif)
 
-**# # Contributors # #** 
+################
+**Contributors** 
+################
 
 *Nathan ABRAHAM, Mickaël PEREIRA, Jean François JUNG*
 
-**# # License # #** 
-
+###########
+**License** 
+###########
 *Bootstrap, CodeIgniter, Ckeditor*
