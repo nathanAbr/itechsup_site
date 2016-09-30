@@ -2,7 +2,7 @@
 **Synopsis** 
 ####################
 
-*L’application est une site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.*
+*L’application est un site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.*
 
 ########################
 **Code Example** 
