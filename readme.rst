@@ -1,44 +1,66 @@
-####################
-**Synopsis** 
-####################
+########################################
+ITECHSUP
+########################################
 
-*L’application est un site internet cross-plateforme présentant le centre de formation Itechsup et ses formations pour d’éventuelles étudiants et/ou formateur, entreprise désirant entreprendre un partenariat.*
+Cette application est un site internet cross-plateforme qui présente le centre de formation Itechsup pour :
 
-########################
-**Code Example** 
-########################
+- des étudiants désireux de s'inscrire à des formations
+- des intervenants voulant dispenser des cours 
+- des entreprises souhaitant devenir partenaire du centre.
+- un (des) administrateur(s) pour gérer le contenu du site
 
-![bloggif_57ee3193171f7.gif](https://bitbucket.org/repo/yrpRRd/images/1439803861-bloggif_57ee3193171f7.gif)
+----------
 
-###################### 	
-**Motivation** 
-######################
+########################################
+Code Example
+########################################
 
-*Un site internet présentant le centre de formation existant déjà mais, nécessitant une mise à jour des codes sources afin d’amélioré l’application et l’expérience utilisateur nous avons décidés de repartir de zéro en utilisant des Frameworks.*
+.. image:: https://bitbucket.org/repo/yrpRRd/images/1439803861-bloggif_57ee3193171f7.gif
+    :alt: HTTPie compared to cURL
+    :width: 100%
+    :align: center
 
-*En effet, le site précédemment créé, avait été développé à la main et ne répondait pas aux normes actuelles régissant les sites internet. De plus, il n’était pas cross-plateforme ce qui ne répondait pas aux différents besoins utilisateurs.*
+----------
 
-*Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphère du développement.* 
+########################################
+Motivation
+########################################
 
-################
-**Installation**
-################ 
+Un site internet présentant le centre de formation existe déjà mais il nécessite une mise à jour des codes sources afin d’améliorer l’expérience utilisateur. Nous avons décidé de repartir de zéro en utilisant des Framework.
 
-*L’application étant un site internet cross-plateforme, il ne nécessite qu’un accès à internet et d’un navigateur.*
+En effet, le site précédemment créé, avait été développé à la main et ne répondait plus aux normes actuelles régissant les sites internet. De plus, il n’était pas cross-plateforme ce qui ne favoriser pas les besoins des utilisateurs.
 
-#########
-**Tests** 
-#########
+Etant en cours de formation sur un titre de concepteur développeur informatique, ce projet va nous permettre d’améliorer nos compétences dans le développement et l’utilisation de technologies présentes dans les plus grandes sphères du développement.
 
-![accueil.gif](https://bitbucket.org/repo/yrpRRd/images/3418877412-accueil.gif)
+----------
 
-################
-**Contributors** 
-################
+########################################
+Installation
+########################################
 
-*Nathan ABRAHAM, Mickaël PEREIRA, Jean François JUNG*
+L’application étant un site internet cross-plateforme, il nécessite un accès à internet et un navigateur WEB.
 
-###########
-**License** 
-###########
+----------
+
+########################################
+Tests
+########################################
+
+.. image:: https://bitbucket.org/repo/yrpRRd/images/3418877412-accueil.gif
+    :alt: HTTPie compared to cURL
+    :width: 100%
+    :align: center
+
+
+########################################
+Contributors
+########################################
+
+*Nathan ABRAHAM, Mickaël PEREIRA, Jean-François JUNG*
+
+----------
+
+########################################
+License
+########################################
 *Bootstrap, CodeIgniter, Ckeditor*
