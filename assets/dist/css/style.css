@@ -19,8 +19,13 @@
     text-align: right;
 }
 .btn-warning {
+    background-color: #EB5E1A;
+}
+
+.btn-warning:hover {
     background-color: #FF5000;
 }
+
 .fa {
     font-size: 30px;
     color: #555555;
@@ -67,29 +72,19 @@
   text-align: center;
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 
 /* AUTRES
 -------------------------------------------------- */
 .img_page{
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    height: 250px;
-    left: 0;
-}
-.titre_img_page{
-    line-height: 5em;
-}
-.container-content{
-    margin-top: 300px;
-}
-.img-formation{
-    margin: auto;
-    max-width: 1900px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(10, 18, 76,0.5);
+  background-blend-mode: multiply;
+  padding: 1.5em 0em 2.5em;
+  color: white;
+  margin: auto;
+  max-width: 1900px;
 }
 #presentation .container{
     padding-top: 50px;

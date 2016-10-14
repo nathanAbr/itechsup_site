@@ -14,7 +14,7 @@ class Portes_ourvertes extends CI_Controller {
         $data = array();
         $data['porte_ouverte'] = $this->porte_ouverte_model->get_porte_ouverte();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('porte_ouverte');
         $content = $this->load->view('portes_ouvertes', $data, true);
         $this->load->view('content', array('content'=>$content));
         

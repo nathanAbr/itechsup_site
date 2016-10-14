@@ -14,7 +14,7 @@ class Offres extends CI_Controller {
         $data = array();
         $data['offre'] = $this->offres_model->get_offres();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('Nos offres');
         $content = $this->load->view('offres', $data, true);
         $this->load->view('content', array('content'=>$content));
         

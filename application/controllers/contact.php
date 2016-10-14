@@ -44,7 +44,6 @@ class Contact extends CI_Controller {
         $this->form_validation->set_rules('nom_part', '"Nom"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('prenom_part', '"Prénom"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('mail_part', '"E-mail"', 'trim|required|valid_email|xss_clean');
-        $this->form_validation->set_rules('adresse_part', '"Adresse"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('tel_part', '"Téléphone"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('objet_part', '"Objet"', 'trim|required|xss_clean');   
         

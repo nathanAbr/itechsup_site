@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 16 Septembre 2016 à 17:28
+-- Généré le :  Ven 14 Octobre 2016 à 17:37
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,22 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `itechsup961`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `autres_temoignages`
---
-
-CREATE TABLE IF NOT EXISTS `autres_temoignages` (
-  `id_autre_temoignage` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_autre_temoignage` varchar(150) COLLATE utf8_bin NOT NULL,
-  `text_autre_temoignage` text COLLATE utf8_bin NOT NULL,
-  `img_autre_temoignage` text COLLATE utf8_bin NOT NULL,
-  `id_type_temoignage` int(11) NOT NULL,
-  PRIMARY KEY (`id_autre_temoignage`),
-  KEY `id_type_temoignage` (`id_type_temoignage`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -74,14 +58,15 @@ CREATE TABLE IF NOT EXISTS `contrats` (
   `remuneration_contrat` text COLLATE utf8_bin NOT NULL,
   `prise_en_charge_contrat` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id_contrat`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
 
 --
 -- Contenu de la table `contrats`
 --
 
 INSERT INTO `contrats` (`id_contrat`, `nom_contrat`, `description_contrat`, `duree_contrat`, `rythme_contrat`, `remuneration_contrat`, `prise_en_charge_contrat`) VALUES
-(1, 'stage', 'test', 'test', 'test', 'test', 'tes');
+(1, 'stage', 'test', 'test', 'test', 'test', 'tes'),
+(2, 'Professionalisation', 'test', 'test', 'test', 'test', 'test');
 
 -- --------------------------------------------------------
 
@@ -147,17 +132,19 @@ CREATE TABLE IF NOT EXISTS `formations` (
   `programme_formation` text COLLATE utf8_bin NOT NULL,
   `debouches_formation` text COLLATE utf8_bin NOT NULL,
   `id_type_formation` int(11) NOT NULL,
+  `resume_formation` text COLLATE utf8_bin NOT NULL,
+  `img_formation` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id_formation`),
   KEY `id_type_formation` (`id_type_formation`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `formations`
 --
 
-INSERT INTO `formations` (`id_formation`, `nom_formation`, `titre_formation`, `description_formation`, `objectifs_formation`, `programme_formation`, `debouches_formation`, `id_type_formation`) VALUES
-(2, 'Licence Concepteur/Développeur informatique', 'Titre RNCP Niveau III', 'Le (la) concepteur(rice)/développeur(se) informatique agit avec autonomie et responsabilités dans le cadre de projets visant à automatiser un ou plusieurs processus de l’entreprise. Il peut mener la conception et le développement de nouvelles applications ou la maintenance évolutive d’applications existantes.', '', 'Programme de la formation\r\n\r\n<ul>Première année</br>\r\n\r\n<li>Développer des composants d’interface</li>\r\n<li>Maquetter une application</li>\r\n<li>Développer des composants d’accès aux données</li>\r\n<li>Développer une page web en lien avec une base de données</li>\r\n<li>Développer une interface utilisateur</li>\r\n</ul>\r\nDévelopper la persistance des données\r\nConcevoir une base de données\r\nMettre en place une base de données\r\nDévelopper des composants dans le language d’une base de données\r\nUtiliser l’anglais dans son activité profesionnelle en informatique\r\n\r\nDévelopper une application n-tiers\r\nConcevoir une application\r\nCollaborer à la gestion d’un projet informatique\r\nDévelopper des composants métier\r\nConstruire une application organisée en couches\r\nDévelopper une application de mobilité numérique\r\nPréparer et exécuter les plans de tests d’une application/son déploiement', '', 2),
-(3, 'test', 'test', 'test', 'test', 'test', 'test', 2);
+INSERT INTO `formations` (`id_formation`, `nom_formation`, `titre_formation`, `description_formation`, `objectifs_formation`, `programme_formation`, `debouches_formation`, `id_type_formation`, `resume_formation`, `img_formation`) VALUES
+(2, 'Licence Concepteur/Développeur informatique', 'Titre RNCP Niveau III', 'Le (la) concepteur(rice)/développeur(se) informatique agit avec autonomie et responsabilités dans le cadre de projets visant à automatiser un ou plusieurs processus de l’entreprise. Il peut mener la conception et le développement de nouvelles applications ou la maintenance évolutive d’applications existantes.', '', 'Programme de la formation\r\n\r\n<ul>Première année</br>\r\n\r\n<li>Développer des composants d’interface</li>\r\n<li>Maquetter une application</li>\r\n<li>Développer des composants d’accès aux données</li>\r\n<li>Développer une page web en lien avec une base de données</li>\r\n<li>Développer une interface utilisateur</li>\r\n</ul>\r\nDévelopper la persistance des données\r\nConcevoir une base de données\r\nMettre en place une base de données\r\nDévelopper des composants dans le language d’une base de données\r\nUtiliser l’anglais dans son activité profesionnelle en informatique\r\n\r\nDévelopper une application n-tiers\r\nConcevoir une application\r\nCollaborer à la gestion d’un projet informatique\r\nDévelopper des composants métier\r\nConstruire une application organisée en couches\r\nDévelopper une application de mobilité numérique\r\nPréparer et exécuter les plans de tests d’une application/son déploiement', '', 2, 'Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.', 'assets/img/icones/icones_formations/programmation.jpg'),
+(4, 'Développeur logiciel', 'Titre de niveau III', 'Le (la) développeur(se) logiciel prend en charge le développement d’applications informatiques dans le cadre de projets visant à automatiser un ou plusieurs processus de l’entreprise, en réponse à des demandes du chef de projet.\r\nElles concernent de nouvelles applications ou la maintenance évolutive d’applications existantes.\r\n\r\nPour plus d''''information visiter <a href="http://www.gouv.fr">gouv.fr</a>', '<ul><li>Mener seul(e) le développement d’un projet</li>\r\n<li>S’adapter rapidement aux demandes du chef de projet et appliquer les normes de qualité logicielle de l’entreprise</li>\r\n<li>Intégrer les évolutions technologiques du secteur informatique</li></ul>', '<ul><li>Développer une application client-serveur<ul>\r\n<li>Maquetter une application</li>\r\n<li>Concevoir une base de données</li>\r\n<li>Mettre en place une base de données</li>\r\n<li>Développer une interface utilisateur</li>\r\n<li>Développer des composants d’accès aux données</li></ul></li>\r\n\r\n\r\n<li>Développer une application web\r\n<ul>\r\n<li>Développer des pages web en lien avec une base de données</li>\r\n<li>Mettre en oeuvre une solution de gestion de contenu ou e-commerce</li>\r\n<li>Développer une application simple de mobilité numérique</li>\r\n<li>Utiliser l’anglais dans son activité profesionnelle en informatique\r\n</li></ul></li></ul>', '', 2, 'Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.', 'assets/img/icones/icones_formations/programmation.jpg');
 
 -- --------------------------------------------------------
 
@@ -171,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `img_pages_head` (
   `titre_img_pages_head` varchar(150) COLLATE utf8_bin NOT NULL,
   `page_img_pages_head` varchar(150) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id_img_pages_head`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
 
 --
 -- Contenu de la table `img_pages_head`
@@ -180,7 +167,15 @@ CREATE TABLE IF NOT EXISTS `img_pages_head` (
 INSERT INTO `img_pages_head` (`id_img_pages_head`, `lien_img_pages_head`, `titre_img_pages_head`, `page_img_pages_head`) VALUES
 (1, 'assets/img/images_pages/candidater.jpg', 'Demande de candidature', 'candidater'),
 (2, 'assets/img/images_pages/main-top-body.png', 'Présentation', 'presentation'),
-(3, 'assets/img/images_pages/main-top-body.png', 'Formations', 'formations');
+(3, 'assets/img/images_pages/main-top-body.png', 'Formations', 'formations'),
+(4, 'assets/img/images_pages/main-top-body.png', 'Nous contacter', 'contact'),
+(5, 'assets/img/images_pages/main-top-body.png', 'Nous trouver', 'trouver'),
+(6, 'assets/img/images_pages/main-top-body.png', 'Nos évènements', 'event'),
+(8, 'assets/img/images_pages/main-top-body.png', 'Nos Contrats', 'contrats'),
+(9, 'assets/img/images_pages/main-top-body.png', 'Nos Partenaires', 'partenaires'),
+(10, '', 'Nos Salons', 'salons'),
+(11, '', 'Nos portes ouvertes', 'porte_ouverte'),
+(12, '', 'Nos réunions d''informations', 'reunion_info');
 
 -- --------------------------------------------------------
 
@@ -287,38 +282,44 @@ CREATE TABLE IF NOT EXISTS `temoignages` (
   `nom_temoignage` varchar(150) COLLATE utf8_bin NOT NULL,
   `text_temoignage` text COLLATE utf8_bin NOT NULL,
   `img_temoignage` text COLLATE utf8_bin NOT NULL,
-  `id_formations` int(11) NOT NULL,
+  `id_type_formation` int(11) NOT NULL,
   PRIMARY KEY (`id_temoignage`),
-  KEY `id_formations` (`id_formations`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+  KEY `id_formations` (`id_type_formation`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `temoignages`
 --
 
-INSERT INTO `temoignages` (`id_temoignage`, `nom_temoignage`, `text_temoignage`, `img_temoignage`, `id_formations`) VALUES
-(3, 'test', 'test', '', 2);
+INSERT INTO `temoignages` (`id_temoignage`, `nom_temoignage`, `text_temoignage`, `img_temoignage`, `id_type_formation`) VALUES
+(4, 'ABRAHAM Nathan', 'Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.', 'assets/img/images_temoignage/nathanabrahamtetedebg.jpg', 2),
+(5, 'PEREIRA Mickaël', 'Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.', 'assets/img/images_temoignage/personnaadmin.jpg', 2);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `types_temoignages`
+-- Structure de la table `trouver`
 --
 
-CREATE TABLE IF NOT EXISTS `types_temoignages` (
-  `id_type_temoignage` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_type_temoignage` varchar(150) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id_type_temoignage`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
+CREATE TABLE IF NOT EXISTS `trouver` (
+  `id_trouver` int(11) NOT NULL AUTO_INCREMENT,
+  `tel_trouver` varchar(20) COLLATE utf8_bin NOT NULL,
+  `fax_trouver` varchar(20) COLLATE utf8_bin NOT NULL,
+  `mail_trouver` varchar(150) COLLATE utf8_bin NOT NULL,
+  `map_trouver` text COLLATE utf8_bin NOT NULL,
+  `transport_trouver` text COLLATE utf8_bin NOT NULL,
+  `adresse_trouver` text COLLATE utf8_bin NOT NULL,
+  `ville_trouver` varchar(150) COLLATE utf8_bin NOT NULL,
+  `cp_trouver` varchar(6) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id_trouver`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
 
 --
--- Contenu de la table `types_temoignages`
+-- Contenu de la table `trouver`
 --
 
-INSERT INTO `types_temoignages` (`id_type_temoignage`, `nom_type_temoignage`) VALUES
-(2, 'presentation'),
-(3, 'contrat de stage'),
-(4, 'contrat de professionalisation');
+INSERT INTO `trouver` (`id_trouver`, `tel_trouver`, `fax_trouver`, `mail_trouver`, `map_trouver`, `transport_trouver`, `adresse_trouver`, `ville_trouver`, `cp_trouver`) VALUES
+(1, '02 51 89 01 69', '02 51 89 03 49', 'contact@ItechSup.fr', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.6300290018626!2d-1.6394732843777167!3d47.22382097916118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ecc9b02fa583%3A0xab5ed1fd4ba2e88a!2sItechsup!5e0!3m2!1sfr!2sfr!4v1476360922095', '<ul>\r\n<li>En transport en commun<ul>\r\n\r\n<li>Tram l.1 - arrêt François Mitterrand\r\nBus 73/84/93 - arrêt Jacques Cartier</li></ul></li>\r\n\r\n<li>En voiture<ul>\r\n\r\n<li>Périphérique - porte d’Atlantis\r\nVoie rapide - axe Vannes/St Nazaire, sortie 1</li></ul></li></ul', 'Parc Héliopolis 1 101 avenue Jacques Cartier', 'Saint Herblain', '44 800');
 
 -- --------------------------------------------------------
 
@@ -347,12 +348,6 @@ INSERT INTO `type_formations` (`id_type_formation`, `nom_type_formation`, `secte
 --
 
 --
--- Contraintes pour la table `autres_temoignages`
---
-ALTER TABLE `autres_temoignages`
-  ADD CONSTRAINT `autres_temoignages_ibfk_1` FOREIGN KEY (`id_type_temoignage`) REFERENCES `types_temoignages` (`id_type_temoignage`);
-
---
 -- Contraintes pour la table `dates_portes_ouvertes`
 --
 ALTER TABLE `dates_portes_ouvertes`
@@ -374,7 +369,7 @@ ALTER TABLE `formations`
 -- Contraintes pour la table `temoignages`
 --
 ALTER TABLE `temoignages`
-  ADD CONSTRAINT `temoignages_ibfk_1` FOREIGN KEY (`id_formations`) REFERENCES `formations` (`id_formation`);
+  ADD CONSTRAINT `temoignages_ibfk_1` FOREIGN KEY (`id_type_formation`) REFERENCES `type_formations` (`id_type_formation`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

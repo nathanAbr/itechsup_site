@@ -1,8 +1,3 @@
-<?php foreach($images_pages as $image){ ?>
-    <div class="img_page" style="background-image:url(<?php echo base_url($image->lien_img_pages_head); ?>);background-repeat: no-repeat;background-attachment:fixed;background-size:100% 75%;">
-        <h3 class="text-center titre_img_page"><?php echo $image->titre_img_pages_head; ?></h3>
-    </div>
-<?php } ?>
 <div class="panel panel-default">
     <div class="panel-heading"></div>
     <div class="panel-body">

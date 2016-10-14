@@ -10,9 +10,11 @@ class Trouver extends CI_Controller {
     
     public function nous_trouver()
 	{
+        $this->load->model('nous_trouver_model');
         $data = array();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('trouver');
+        $data['nous_trouver'] = $this->nous_trouver_model->get_trouver();
         $content = $this->load->view('nous_trouver', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}

@@ -8,6 +8,7 @@
         <link href="<?php echo base_url('assets/dist/css/bootstrap.min.css');?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/dist/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/dist/css/accueil.css');?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/dist/css/formations.css');?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/dist/css/style.css');?>" rel="stylesheet" type="text/css" />
     </head>
 

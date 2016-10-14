@@ -14,7 +14,7 @@ class Contrats extends CI_Controller {
         $data = array();
         $data['contrats'] = $this->contrats_model->get_contrat($url);
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('contrats');
         $content = $this->load->view('contrats', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}

@@ -14,7 +14,7 @@ class Reunions_infos extends CI_Controller {
         $data = array();
         $data['reunion_info'] = $this->reunion_info_model->get_reunion_info();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('reunion_info');
         $content = $this->load->view('reunions_infos', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}

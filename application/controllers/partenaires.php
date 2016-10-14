@@ -14,7 +14,7 @@ class Partenaires extends CI_Controller {
         $data = array();
         $data['partenaire'] = $this->partenaires_model->get_partenaire();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('partenaires');
         $content = $this->load->view('partenaires', $data, true);
         $this->load->view('content', array('content'=>$content));
         

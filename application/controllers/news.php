@@ -13,7 +13,7 @@ class News extends CI_Controller {
         $this->load->model('news_model');
         $data = array();
         $data['news'] = $this->news_model->get_news_page();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('event');
         $data['header'] = $this->header->index();
         $content = $this->load->view('news', $data, true);
         $this->load->view('content', array('content'=>$content));

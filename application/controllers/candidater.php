@@ -27,12 +27,14 @@ class Candidater extends CI_Controller {
         
         if ($this->form_validation->run() == false) {
             $data['header'] = $this->header->index();
+            $data['img_pages'] = $this->images_pages->index('candidater');
             $content = $this->load->view('candidater', $data, true);
             $this->load->view('content', array('content'=>$content));
         }
         else
         {
             $data['header'] = $this->header->index();
+            $data['img_pages'] = $this->images_pages->index('candidater');
             $content = $this->load->view('candidature_valide', $data, true);
             $this->load->view('content', array('content'=>$content));
         }

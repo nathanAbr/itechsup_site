@@ -14,7 +14,7 @@ class Salons extends CI_Controller {
         $data = array();
         $data['salon'] = $this->salon_model->get_salon();
         $data['header'] = $this->header->index();
-        $data['img_pages'] = $this->images_pages->index('presentation');
+        $data['img_pages'] = $this->images_pages->index('salons');
         $content = $this->load->view('salons', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}

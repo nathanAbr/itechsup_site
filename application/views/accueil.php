@@ -1,5 +1,5 @@
 <!-- CAROUSEL -->
-<section id="caroussel">
+<section id="carousel">
     <div id="myCarousel" class="marketing carousel slide" data-ride="carousel">
         <?php 
             $active = "active";
@@ -68,7 +68,7 @@
 
 <!-- FORMATION -->
 <section id="formations">
-    <div class="marketing img-formation">
+    <div class="marketing img-formation" style="background-image: url(<?php echo base_url('assets/img/main-top-body.png'); ?>);">
         <h1>Nos formations</h1>
         <h2>Notre école propose des formations diplômantes du BAC +2 au BAC +5</h2>
     </div>
@@ -77,7 +77,7 @@
         <?php foreach($type_formation as $type){ ?>
             <div class="col-md-4">
                 <div class="panel panel-perso">
-                    <div class="panel-heading"><h2 class="text-center"><?php echo $type->nom_type_formation; ?></h2></div>
+                    <div class="panel-heading accueil"><h2 class="text-center"><?php echo $type->nom_type_formation; ?></h2></div>
                     <div class="panel-footer"><p class="text-center">En savoir </p><p><span class="glyphicon glyphicon-plus-sign"></span></p></div>
                 </div>
             </div>

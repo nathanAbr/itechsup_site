@@ -1,0 +1,111 @@
+.nom-formation {
+	padding: 1em 0em 1em;
+}
+
+.temoignages {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	box-shadow: 10px 10px 50px rgba(0,0,0, 0.6);
+	
+}
+.temoignages p{
+	color: white;
+}
+
+.temoignages .item h2 {
+	color: #FF5000;
+	text-shadow:1px 1px 1px #FF5000;
+}
+
+.temoignages h2 {
+	background-color: 
+}
+
+.temoignages .item {
+
+	margin-top: 5px;
+	background-color: #555555;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 10px; 
+	box-shadow: 10px 0px 20px 2px #474747 inset;
+}
+
+.img-temoignage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(10, 18, 76,0.5);
+  background-blend-mode: lighten;
+  margin: auto;
+  height: 200px;
+  max-width: 200px;
+}
+
+.titre-formation {
+	font-weight: bold;
+	color: #FF5000;
+}
+
+/* MODAL */
+
+.modal-header {
+
+    background-repeat: no-repeat;
+	
+	background-size: cover;
+	background-color: rgba(255, 80, 0,0.9);
+	background-blend-mode: multiply;
+	padding: 1.8em 0em 1.8em;
+
+}
+
+.modal-body {
+	padding: 2em 3em 2em;
+}
+
+.tab-content {
+	padding: 2em 0em 0em;
+}
+.modal-title {
+	
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-shadow:5px 5px 5px black;
+	
+}
+
+#formations-tabs {
+	padding: 1.5em 0em 0em;
+	border-bottom: 1px solid #FF5000;
+
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	border-top: 1px solid #FF5000;
+	border-left: 1px solid #FF5000;
+	border-right: 1px solid #FF5000;
+	background-color: #555555;
+	color: white;
+}
+
+.nav-tabs>li>a {
+	color: #FF5000;
+	border: #FF5000;
+}
+.nav-tabs>li>a:focus {
+	background-color: #555555;
+}
+.nav-tabs>li>a:hover {
+	background-color: #FF5000;
+	color: white;
+	border-bottom: #FF5000;
+}
+
+
+.close {
+	font-weight: 30px;
+}

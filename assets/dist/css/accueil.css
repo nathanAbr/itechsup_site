@@ -13,11 +13,11 @@
 /* Declare heights because of positioning of img element */
 .carousel .item {
   max-height: 450px;
-  background-color: #454555;
 }
 .carousel-inner > .item > img {
   opacity: 0.7;
   filter: alpha(opacity=70); /* For IE8 and earlier */
+  margin: auto;
 }
 
 /* SECTION PRESENTATION
@@ -32,7 +32,6 @@
 /* SECTION FORMATION
 ------------------------- */
 .img-formation {
-  background-image: url(../../img/main-top-body.png);
   background-position: center center;
   background-size: cover;
   background-repeat:no-repeat;
@@ -48,6 +47,7 @@
   transition: box-shadow 0.5s;
   background-color: white !important;
   box-shadow: 5px 0px 40px rgba(0,0,0, 0.6);
+  box-shadow: 2px 0px 20px 2px #e0dede inset;
 }
 /* Grossisement de l'icone "+" au passage de la souris dans le panel */
 .panel-perso span{
@@ -61,8 +61,12 @@
   color: #FF5000;
   border-color: #FF5000;
   border-bottom: solid 3px;
+}
+
+.panel > .panel-heading.accueil {
   height: 100px;
 }
+
 .panel > .panel-footer {
   background-color: #555555;
   color: #FF5000;
@@ -86,4 +90,81 @@
     font-size: 21px;
     line-height: 1.4;
   }
+}
+
+/* FOOTER
+-------------------------------------------------- */
+footer .mastfoot {
+  color: white; /* IE8 proofing */
+  background-color: #555;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.logo-accueil-footer{
+    background: url('../../img/logo/sofra.png'); 
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 120px; 
+}
+
+
+
+.row-footer{
+  min-height: 130px;
+  max-height: 320px;
+}
+
+.row-footer h4{
+    text-align: left;
+    color: #99d4ff;
+    font-size: 12px;
+}
+
+.row-footer p, .row-footer a{
+    text-align: left;
+    font-size: 9px;
+    color: white;
+}
+
+.prestation-footer{
+    text-align: left;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+.bandeau-footer{
+    min-height: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #FF5000;
+}
+
+.social{
+    display: inline-block;
+    opacity: 0.6;
+    transition: all 0.4s;
+    text-align: left;
+}
+
+.social:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer .row.featurette img{
+    width: 100%;
+}
+
+footer .panel-footer{
+    margin: 0;
+    padding: 0;
+    border: none;
 }
