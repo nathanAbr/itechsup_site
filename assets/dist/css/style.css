@@ -1,22 +1,30 @@
 /* CODE COULEURS CHARTE
 -------------------------------------------------- 
 
-
-
 */
+
+@font-face {
+    font-family: Prime;
+    src: url(../fonts/Prime Regular.otf);
+}
 
 /* BANNIERE
 -------------------------------------------------- 
 */
 
+.banniere {
+  display: flex;
+  align-items: flex-end;
+}
+
+.banniere-social {
+  text-align: right;
+}
+
 #logo_header{    
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     max-width: 45%;
-}
-.banniere {
-    vertical-align: middle;
-    text-align: right;
 }
 .btn-warning {
     background-color: #EB5E1A;
@@ -93,6 +101,66 @@
     margin-top: 20px;
 }
 
+.date-grille{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.date-event {  
+    color: #FF5000;
+    font-size: 25px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.event-background{
+    transition: all 0.5s;
+}
+
+.date-event h2{  
+    font-size: 40px;
+}
+
+.event-button{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.event-button:hover .date-event{
+    color: White;
+    background-color: #FF5000;
+}
+
+.event-button:hover{
+    text-decoration: none;
+}
+
+.event-button:hover .event-background{
+    background-color: #bbb;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.event-button:hover .event-background h2.nom-formation{
+    color: white;
+}
+.bg-grey{
+  background-color: #F7F7F7;
+  border: solid #f2f2f2 2px;
+}
+
+.presentation p {
+  padding: 0em 2em 2em;
+}
+
+.presentation h2 {
+  color: #EB5E1A;
+}
 /* FORMULAIRES
 -------------------------------------------------- */
 form .form-group p{

@@ -10,14 +10,14 @@
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Nous trouver par t&eacute;l&eacute;phone</div>
+                <div class="panel-heading">Nous contacter par t&eacute;l&eacute;phone</div>
                 <div class="panel-body">
                     <p>T&egrave;l : <?php echo $trouver->tel_trouver; ?></p>
                     <p>Fax : <?php echo $trouver->fax_trouver; ?></p>
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Nous trouver par Mail</div>
+                <div class="panel-heading">Nous contacter par Mail</div>
                 <div class="panel-body">
                     <p>Mail : <?php echo $trouver->mail_trouver; ?></p>
                 </div>

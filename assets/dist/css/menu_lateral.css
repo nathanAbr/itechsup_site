@@ -1,0 +1,148 @@
+.menu_btn {
+    background: #aaa;
+    display:block;
+    height:42px;
+    width:42px;
+    position:fixed;
+    top:0;
+    right: 0;
+    font-size: 18px;
+    color: white;
+    line-height: 2.5em;
+    text-align: center;
+    z-index: 15;
+}
+
+.menu_lateral{
+    height: 100%;
+}
+
+.event-header{
+    background-color: #ddd;
+    min-height: 70%;
+    color: black;
+    padding-top: 30px;
+}
+
+.menu-header-lateral{
+    height: 30%;
+}
+
+.title-event-header{
+    margin: 0;
+    margin-bottom: 30px;
+    color: #FF5000;
+}
+
+a.menu_btn:hover{
+    text-decoration: none;
+    background-color: #ddd;
+    color: white;
+}
+ 
+#menu {
+    position:fixed;
+    background:#555;
+    top:0;
+    bottom:0;
+    width:240px;
+    right:-240px;
+    z-index:9999;
+}
+ 
+#menu ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    color:white;
+}
+ 
+#menu ul li {
+    height:25%;
+    padding-left:30px;
+    border-bottom:1px solid white;
+}
+ 
+#menu ul li:hover {
+    background:#FF5000;     
+}
+ 
+#menu ul li a {
+    color:white;
+    text-decoration:none;
+    font-family: 'Prime';
+    display:block;
+    font-size: 125%;
+    line-height: 320%;
+}
+ 
+.close {
+    display:block;
+    background:#aaa;
+    height:47px;
+    width:47px;
+    position:absolute;
+    top:0;
+    left:-47px;
+    font-size: 18px;
+    color: black;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+
+@media (max-width: 450px) {
+    .menu_lateral {
+        font-size: 100%;
+    }
+    #menu ul li {
+        height:25%;
+        padding-left:30px;
+        border-bottom:1px solid white;
+    }
+    #menu ul li a {
+        color:white;
+        text-decoration:none;
+        font-family: 'Prime';
+        display:block;
+        line-height: 300%;
+    }
+}
+
+@media (max-width: 738px) {
+    .menu_lateral {
+        font-size: 100%;
+    }
+    #menu ul li {
+        height:25%;
+        padding-left:30px;
+        border-bottom:1px solid white;
+    }
+    #menu ul li a {
+        color:white;
+        text-decoration:none;
+        font-family: 'Prime';
+        display:block;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu_lateral {
+        font-size: 100%;
+    }
+    #menu ul li a {
+        color:white;
+        text-decoration:none;
+        font-family: 'Prime';
+        display:block;
+        line-height: 140%;
+    }
+}
+
+@media (max-height: 500px){
+    .menu_lateral{
+        overflow: scroll;
+    }
+}
+ 

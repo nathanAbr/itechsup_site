@@ -15,6 +15,7 @@ class Presentation extends CI_Controller {
         $data['presentation'] = $this->presentation_model->get_presentation();
         $data['img_pages'] = $this->images_pages->index('presentation');
         $data['header'] = $this->header->index();
+        $data['temoignages'] = $this->temoignages->presentation();
         $content = $this->load->view('presentation', $data, true);
         $this->load->view('content', array('content'=>$content));
         

@@ -15,7 +15,7 @@ class Formation extends CI_Controller {
         $data['formations'] = $this->formation_model->get_formation($url);
         $data['img_pages'] = $this->images_pages->index('formations');
         $data['header'] = $this->header->index();
-        $data['temoignages'] = $this->temoignages_formations->index($url);
+        $data['temoignages'] = $this->temoignages->formations($url);
         $content = $this->load->view('formations', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}

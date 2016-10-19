@@ -3,80 +3,88 @@
 
 /* Carousel base class */
 .carousel {
-  max-height: 450px;
+    height: 450px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  z-index: 10;
+    z-index: 10;
 }
-
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  max-height: 450px;
+    height: 450px;
 }
-.carousel-inner > .item > img {
-  opacity: 0.7;
-  filter: alpha(opacity=70); /* For IE8 and earlier */
-  margin: auto;
+.img-carousel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(10, 18, 76,0.5);
+    background-blend-mode: multiply;
+    margin: auto;
+    height: 450px;
 }
 
 /* SECTION PRESENTATION
 -------------------------------------------------- */
 .img-circle{
-  background-color: #FF5000;
+    background-color: #FF5000;
 }
 .img-rounded{
-  background-color: #FF5000;
+    background-color: #FF5000;
+}
+.presentation-element {
+    
 }
 
 /* SECTION FORMATION
 ------------------------- */
 .img-formation {
-  background-position: center center;
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-color: rgba(10, 18, 76,0.5);
-  background-blend-mode: multiply;
-
-  padding: 4em 0em 6em;
-  color: white;
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: rgba(10, 18, 76,0.5);
+    background-blend-mode: multiply;
+    padding: 4em 0em 6em;
+    color: white;
 }
 .panel-perso {
-  margin-top: -15px;
-  border: 0px !important;
-  transition: box-shadow 0.5s;
-  background-color: white !important;
-  box-shadow: 5px 0px 40px rgba(0,0,0, 0.6);
-  box-shadow: 2px 0px 20px 2px #e0dede inset;
+    margin-top: -15px;
+    border: 0px !important;
+    transition: box-shadow 0.5s;
+    background-color: white !important;
+    box-shadow: 2px 0px 20px 6px rgba(100,100,100, 0.1)inset;
 }
 /* Grossisement de l'icone "+" au passage de la souris dans le panel */
 .panel-perso span{
-  -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: font-size 0.5s;
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.5s;
 }
 .panel-perso:hover span{
-  font-size: 60px;
+    font-size: 60px;
 }
 .panel > .panel-heading {
-  color: #FF5000;
-  border-color: #FF5000;
-  border-bottom: solid 3px;
+    color: #FF5000;
+    border-color: #FF5000;
+    border-bottom: solid 3px;
+    box-shadow: 0px 0px 20px rgba(100,100,100, 0.2);
 }
-
 .panel > .panel-heading.accueil {
-  height: 100px;
+    height: 100px;
 }
-
 .panel > .panel-footer {
-  background-color: #555555;
-  color: #FF5000;
-  border-color: #FF5000;
+    background-color: #555555;
+    color: #FF5000;
+    border-color: #FF5000;
 }
-
+a.lien-panel-footer {
+    color: #FF5000;
+    background-color: #555555;
+}
+a.lien-panel-footer:hover {
+    text-decoration: none;
+}
 /* Resserer les vignettes */
 .text-formation {
-  margin-left: 2.1em;
-  margin-right: 2.1em;
+    margin-left: 2.1em;
+    margin-right: 2.1em;
 }
 
 /* RESPONSIVE CSS
@@ -92,53 +100,63 @@
   }
 }
 
-/* FOOTER
--------------------------------------------------- */
-footer .mastfoot {
-  color: white; /* IE8 proofing */
-  background-color: #555;
-  width: 100%;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: relative;
+@media (max-width: 768px) {
+
+  header .banniere {
+    display: none;
+  }
+  /* Bump up size of carousel content */
+  #carousel {
+    display: none;
+  }
+  .menu_btn {
+    top : 60px;
+  }
 }
 
+/* FOOTER
+-------------------------------------------------- */
+footer{
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+}
+footer .mastfoot {
+    color: white; /* IE8 proofing */
+    background-color: #555;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
 .logo-accueil-footer{
-    background: url('../../img/logo/sofra.png'); 
+    background: url('../../img/logo/logo2.png'); 
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 120px; 
 }
-
-
-
 .row-footer{
-  min-height: 130px;
-  max-height: 320px;
+    min-height: 130px;
+    max-height: 320px;
 }
-
 .row-footer h4{
     text-align: left;
     color: #99d4ff;
     font-size: 12px;
 }
-
 .row-footer p, .row-footer a{
     text-align: left;
     font-size: 9px;
     color: white;
 }
-
 .prestation-footer{
     text-align: left;
 }
-
 .icon-bar{
     background-color: white;
 }
-
 .bandeau-footer{
     min-height: 10px;
     width: 100%;
@@ -146,25 +164,26 @@ footer .mastfoot {
     margin: 0;
     background-color: #FF5000;
 }
-
 .social{
     display: inline-block;
     opacity: 0.6;
     transition: all 0.4s;
     text-align: left;
 }
-
 .social:hover{
     opacity: 1;
     cursor: pointer;
 }
-
 footer .row.featurette img{
     width: 100%;
 }
-
 footer .panel-footer{
     margin: 0;
     padding: 0;
     border: none;
+}
+footer .panel-group.panel-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

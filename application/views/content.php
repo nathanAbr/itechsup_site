@@ -1,10 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-    <body>
         <?php 
             echo $header;
-            if(isset($content)) { 
-            if(current_url() != site_url()){?>
+            if(isset($content)){ 
+            if(current_url() != site_url()){ ?>
                 <header id="img-page">
                     <?php foreach($images_pages as $image){ ?>
                         <div class="marketing img_page" style="background-image:url(<?php echo base_url($image->lien_img_pages_head); ?>);">
@@ -13,15 +12,14 @@
                     <?php } ?>
                 </header>
                 <div class="container marketing">
-                <?php } ?>
+            <?php } ?>
             <?php
                 echo $content;
-            }
-            else {
+            } else
+            {
                 echo '<h1>Désolé, il n\'y a rien à afficher à cette URL</h1>';
             }
         ?>
-
 
         </div>
         
@@ -49,13 +47,13 @@
                                                 </div>
                                                 
                                                 <div class="col-xs-3 prestation-footer">
-                                                    <h4>Lien utiles</h4>
+                                                    <h4>Liens utiles</h4>
                                                     <a class="dropdown-toggle" href="<?php echo "#"; ?>"></a></br>
                                                 </div>
                                                 
                                                 <div class="col-xs-3">
                                                     <h4>&Acirc; savoir</h4>
-                                                    <p><a href="#">Mention légal</a></p>
+                                                    <p><a href="#">Mentions légales</a></p>
                                                 </div>
                                                 
                                                 <div class="col-xs-3 social">
@@ -77,18 +75,7 @@
                     </div>
                 </div>
             </footer>
-        
-        <script type="text/javascript">
-            
-            $('#myTabs a').click(function (e) {
-              e.preventDefault()
-              $(this).tab('show')
-            })
-
-            $('#myTabs a[href="#programme"]').tab('show') // Select tab by name
-            $('#myTabs a[href="#objectifs"]').tab('show') // Select tab by name
-            $('#myTabs a[href="#debouches"]').tab('show') // Select tab by name
-        </script>
+        </div>
         <script src="<?php echo base_url('assets/js/jquery-1.12.3.min.js');?>"></script>
         <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
         <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>

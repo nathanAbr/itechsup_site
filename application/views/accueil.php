@@ -5,7 +5,7 @@
             $active = "active";
             $i = 0;
         ?>
-        
+
         <ol class="carousel-indicators">
         <?php foreach($slide as $img){ ?>
             <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>" class="<?php echo $active; ?>"></li>
@@ -20,7 +20,7 @@
         <?php $active = "active"; ?>
         <?php foreach($slide as $img){ ?>
             <div class="item <?php echo $active; ?>">
-                <img class="img-responsive <?php echo $active; ?>" src="<?php echo base_url($img->img_carousel);?>" alt="" />
+                <div class="img-carousel" style="background-image: url(<?php echo base_url($img->img_carousel); ?>);"></div>
                 <div class="container">
                     <div class="carousel-caption">
                         <h1><?php echo $img->titre_carousel; ?></h1>
@@ -46,7 +46,7 @@
 <section id="presentation">
     <div class="container marketing">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 presentation-element">
                 <img class="img-circle" src="assets/img/presentation/feature9.png" alt="Generic placeholder image" width="110" height="110">
                 <h2>Itechsup</h2>
                 <a href="<?php echo site_url('index.php/presentation'); ?>">Présentation du centre</a>
@@ -59,7 +59,7 @@
             <div class="col-md-4">
                 <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
                 <h2>Vie du centre</h2>
-                <a href="<?php echo site_url('index.php/events'); ?>">Les évènements à venir</a>
+                <a href="<?php echo site_url('index.php/news'); ?>">Les évènements à venir</a>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>
         </div>
@@ -78,15 +78,20 @@
             <div class="col-md-4">
                 <div class="panel panel-perso">
                     <div class="panel-heading accueil"><h2 class="text-center"><?php echo $type->nom_type_formation; ?></h2></div>
-                    <div class="panel-footer"><p class="text-center">En savoir </p><p><span class="glyphicon glyphicon-plus-sign"></span></p></div>
+                    <div class="panel-footer">
+                        <p class="text-center">En savoir</p>
+                        <a class="lien-panel-footer" href="<?php echo site_url('index.php/formation/formations/'.$type->id_type_formation); ?>">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         <?php } ?>
         </div>
     </div>
+    <hr class="featurette-divider">
 </section>
 
-<hr class="featurette-divider">
 
 <!-- EVENEMENTS -->
 <section id="evenements">

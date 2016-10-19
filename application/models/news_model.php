@@ -10,7 +10,7 @@ class News_model extends CI_Model
                     ->from($this->table)
                     ->where('date_event > "'.date("Y-m-d").'"')
                     ->order_by('date_event', 'asc')
-                    ->limit(0, 3)
+                    ->limit(3)
                     ->get()
                     ->result();
     }
@@ -21,6 +21,17 @@ class News_model extends CI_Model
                     ->from($this->table)
                     ->where('date_event > "'.date("Y-m-d").'"')
                     ->order_by('date_event', 'asc')
+                    ->get()
+                    ->result();
+    }
+    
+    public function get_news_header()
+    {
+        return $this->db->select('*')
+                    ->from($this->table)
+                    ->where('date_event > "'.date("Y-m-d").'"')
+                    ->order_by('date_event', 'asc')
+                    ->limit(1)
                     ->get()
                     ->result();
     }

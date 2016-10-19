@@ -1,0 +1,19 @@
+.candidater form {
+	background-color: #F7F7F7;
+	margin-top: 15px;
+	padding: 1em 0em 1em;	
+	border: solid 1px #F1F1F1;
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+}
+.contact-panel{
+	margin-top: 15px;
+}
+.contact-panel ul {
+	border-bottom: 0;
+}
+.contact-panel li{
+	float: none;
+
+}
+
