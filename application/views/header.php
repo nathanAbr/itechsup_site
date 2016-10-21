@@ -12,6 +12,7 @@
         <link href="<?php echo base_url('assets/dist/css/formations.css');?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/dist/css/style.css');?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('assets/dist/css/contact.css');?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/dist/css/contrats.css');?>" rel="stylesheet" type="text/css" />
         <!-- scripts -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/dist/js/menu_lateral.js');?>"></script>
@@ -26,7 +27,7 @@
                 <li><a href="<?php echo site_url('index.php/candidater'); ?>">Candidater</a></li>
                 <li><a href="<?php echo site_url('index.php/contact'); ?>">Nous contacter</a></li>
             </div>
-            <?php foreach($news as $new){ ?>
+            <!--<?php foreach($news as $new){ ?>
                 <div class="event-header">
                     <div class="text-center">
                         <h2 class="title-event-header text-center">Prochain évènement</h2>
@@ -35,7 +36,7 @@
                         <p><?php echo $new->text_event; ?></p>
                     </div>
                 </div>
-            <?php } ?>
+            <?php } ?>-->
 
         </ul>
     </div>
@@ -59,6 +60,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
+                    <a class="navbar-brand" href=""><img alt="Itechsup" width="70" height="25" src="<?php echo base_url('assets/img/logo/logo2.png');?>"></a>
                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -92,9 +94,9 @@
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vie du centre <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo site_url('index.php/news'); ?>">&Eacute;vénements</a></li> 
-                                <li><a href="#">Salons</a></li>   
-                                <li><a href="#">Réunions d'information</a></li>
-                                <li><a href="#">Portes ouvertes</a></li>
+                                <li><a href="<?php echo site_url('index.php/salons'); ?>">Salons</a></li>   
+                                <li><a href="<?php echo site_url('index.php/reunions_infos'); ?>">Réunions d'information</a></li>
+                                <li><a href="<?php echo site_url('index.php/portes_ouvertes'); ?>">Portes ouvertes</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Offre</a></li>
@@ -105,6 +107,7 @@
                                 <li><a href="<?php echo site_url('index.php/candidater'); ?>">Demande de candidature</a></li>
                             </ul>
                         </li>
+                        <li class="mon_espace"><a href="#" class="btn btn-warning" role="button">Mon espace</a></li>
                     </ul>
                 </div>
             </div>

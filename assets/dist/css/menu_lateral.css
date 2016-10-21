@@ -1,20 +1,21 @@
 .menu_btn {
-    background: #aaa;
+    background: #999;
     display:block;
     height:42px;
     width:42px;
     position:fixed;
     top:0;
-    right: 0;
+    right:0;
     font-size: 18px;
     color: white;
-    line-height: 2.5em;
     text-align: center;
     z-index: 15;
+    line-height: 230%;
 }
 
 .menu_lateral{
     height: 100%;
+    border-left: 2px solid #FF5555;
 }
 
 .event-header{
@@ -58,22 +59,24 @@ a.menu_btn:hover{
 }
  
 #menu ul li {
-    height:25%;
+    height: 25%;
     padding-left:30px;
     border-bottom:1px solid white;
+    transition: all 0.4s;
+    position: relative;
 }
  
 #menu ul li:hover {
-    background:#FF5000;     
+    background:#FF5555;     
 }
  
 #menu ul li a {
     color:white;
     text-decoration:none;
     font-family: 'Prime';
-    display:block;
-    font-size: 125%;
-    line-height: 320%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
  
 .close {

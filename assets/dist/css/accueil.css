@@ -30,8 +30,8 @@
 .img-rounded{
     background-color: #FF5000;
 }
-.presentation-element {
-    
+.presentation-element img {
+    box-shadow: 2px 3px 15px rgba(100,100,100, 0.8);
 }
 
 /* SECTION FORMATION
@@ -50,34 +50,47 @@
     border: 0px !important;
     transition: box-shadow 0.5s;
     background-color: white !important;
-    box-shadow: 2px 0px 20px 6px rgba(100,100,100, 0.1)inset;
+    box-shadow: 1px 2px 6px rgba(100,100,100, 0.9);
+    
 }
+
 /* Grossisement de l'icone "+" au passage de la souris dans le panel */
 .panel-perso span{
-    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: font-size 0.5s;
+
+
+    -webkit-transition: font-size 0.5s, -webkit-transform 0.5s;
+  transition: font-size 0.5s, transform 0.5s;
+  text-shadow:0px 0px 5px #444444;
+
+
 }
 .panel-perso:hover span{
-    font-size: 60px;
+   font-size: 60px;
+    -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 .panel > .panel-heading {
+    background-color: #f7f7f7;
     color: #FF5000;
     border-color: #FF5000;
     border-bottom: solid 3px;
-    box-shadow: 0px 0px 20px rgba(100,100,100, 0.2);
 }
 .panel > .panel-heading.accueil {
+
     height: 100px;
 }
 .panel > .panel-footer {
-    background-color: #555555;
+    background: linear-gradient(141deg, #444444 0%, #4c4c4c 41%, #555555 65%);
     color: #FF5000;
     border-color: #FF5000;
+    box-shadow: 1px 2px 12px rgba(100,100,100, 0.6);
 }
 a.lien-panel-footer {
     color: #FF5000;
     background-color: #555555;
+
 }
+
 a.lien-panel-footer:hover {
     text-decoration: none;
 }
@@ -98,9 +111,17 @@ a.lien-panel-footer:hover {
     font-size: 21px;
     line-height: 1.4;
   }
+  .navbar-header > a > img{
+    display: none;
+  }
+
+  li.mon_espace {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+
 
   header .banniere {
     display: none;
@@ -112,6 +133,12 @@ a.lien-panel-footer:hover {
   .menu_btn {
     top : 60px;
   }
+  li.mon_espace {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+
+    }
 }
 
 /* FOOTER
@@ -123,7 +150,7 @@ footer{
 }
 footer .mastfoot {
     color: white; /* IE8 proofing */
-    background-color: #555;
+    background: linear-gradient(141deg, #444444 0%, #4c4c4c 30%, #555555 60%);
     width: 100%;
     text-align: center;
     padding-top: 10px;

@@ -1,9 +1,8 @@
 <div class="row">
-
     <div class="col-md-8 contrats">
     <?php foreach($contrats as $contrat){ ?>
-        <h2><?php echo $contrat->nom_contrat; ?></h2>
         <div class="bg-grey">
+            <h2 class="text-muted nom-formation"><?php echo $contrat->nom_contrat; ?></h2>
             <div>
                 <!-- Nav tabs -->
                 <ul id="contrats-tabs<?php echo $contrat->id_contrat; ?>" class="nav nav-tabs" role="tablist">
@@ -14,7 +13,7 @@
                     <li role="contrat"><a href="#prisencharge<?php echo $contrat->id_contrat; ?>" aria-controls="prisencharge" role="tab" data-toggle="tab">Prise en charges</a></li>
                 </ul>
                 <!-- Tab panes -->
-                <div class="tab-content">
+                <div class="tab-content contrat-content">
                     <div role="tabpanel" class="tab-pane active" id="description<?php echo $contrat->id_contrat; ?>"><?php echo $contrat->description_contrat; ?></div>
                     <div role="tabpanel" class="tab-pane" id="duree<?php echo $contrat->id_contrat; ?>"><?php echo $contrat->duree_contrat; ?></div>
                     <div role="tabpanel" class="tab-pane" id="rythme<?php echo $contrat->id_contrat; ?>"><?php echo $contrat->rythme_contrat; ?></div>

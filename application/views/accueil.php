@@ -51,12 +51,12 @@
                 <h2>Itechsup</h2>
                 <a href="<?php echo site_url('index.php/presentation'); ?>">Présentation du centre</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 presentation-element">
                 <img class="img-circle" src="assets/img/presentation/feature8.png" alt="Generic placeholder image" width="110" height="110">
                 <h2>Candidature</h2>
                 <a href="<?php echo site_url('index.php/candidater'); ?>">Rejoignez-nous</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 presentation-element">
                 <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
                 <h2>Vie du centre</h2>
                 <a href="<?php echo site_url('index.php/news'); ?>">Les évènements à venir</a>

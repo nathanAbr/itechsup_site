@@ -12,10 +12,10 @@ class Salons extends CI_Controller {
 	{
         $this->load->model('salon_model');
         $data = array();
-        $data['salon'] = $this->salon_model->get_salon();
+        $data['salons'] = $this->salon_model->get_salon();
         $data['header'] = $this->header->index();
         $data['img_pages'] = $this->images_pages->index('salons');
-        $content = $this->load->view('salons', $data, true);
+        $content = $this->load->view('salon', $data, true);
         $this->load->view('content', array('content'=>$content));
 	}
     

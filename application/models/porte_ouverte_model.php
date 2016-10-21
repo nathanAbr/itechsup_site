@@ -13,11 +13,11 @@ class Porte_ouverte_model extends CI_Model
                     ->result();
     }
     
-    public function get_dates_porte_ouverte($po)
+    public function get_dates_porte_ouverte()
     {
         return $this->db->select('*')
                     ->from($this->table_date)
-                    ->where('id_portes_ouvertes = "'.$po.'"')
+                    ->where('date_porte_ouverte > "'.date('Y-m-d').'"')
                     ->get()
                     ->result();
     }

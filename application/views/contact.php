@@ -83,6 +83,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="tel" class="col-sm-4 control-label">Adresse</label>
+                                <div class="col-sm-5">
+                                    <input type="adresse" class="form-control" id="adresse" placeholder="Adresse" name="adresse" value="<?php echo set_value('adresse'); ?>" />
+                                    <?php echo form_error('adresse'); ?>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="objet" class="col-sm-4 control-label">Objet</label>
                                 <div class="col-sm-5">
                                     <input type="objet" class="form-control" id="objet" placeholder="Objet" name="objet" value="<?php echo set_value('objet'); ?>" />

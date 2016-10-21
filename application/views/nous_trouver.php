@@ -1,7 +1,6 @@
 <?php foreach($nous_trouver as $trouver){?>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-5">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 contact-panel">
             <div class="panel panel-default">
             <div class="panel-heading">Notre adresse</div>
                 <div class="panel-body">
@@ -29,7 +28,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7">
+         <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-12 col-sm-6 col-md-7 contact-panel">
             <iframe src="<?php echo $trouver->map_trouver; ?>" style="width:100%;height:500px;" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
