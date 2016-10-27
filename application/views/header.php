@@ -16,6 +16,21 @@
         <!-- scripts -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/dist/js/menu_lateral.js');?>"></script>
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//localhost/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//localhost/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
     </head>
     <body>
     <div id="menu">
@@ -99,7 +114,7 @@
                                 <li><a href="<?php echo site_url('index.php/portes_ouvertes'); ?>">Portes ouvertes</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Offre</a></li>
+                        <li><a href="<?php echo site_url('index.php/offres'); ?>">Offre</a></li>
                         <li class="dropdown"><a class="dropdown-toggle drop menu" data-toggle="dropdown" href="#">Contact <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo site_url('index.php/contact'); ?>">Nous contacter</a></li>

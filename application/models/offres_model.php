@@ -12,4 +12,13 @@ class Offres_model extends CI_Model
                     ->result();
     }
     
+    public function get_offres_form($url)
+    {
+        return $this->db->select('*')
+                    ->from($this->table)
+                    ->where('id_type_formation = '.$url)
+                    ->get()
+                    ->result();
+    }
+    
 }
