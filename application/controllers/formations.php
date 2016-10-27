@@ -28,7 +28,8 @@ class Formations extends CI_Controller {
         $crud->set_theme('bootstrap');
         $crud->set_table('formations');
         $crud->set_subject('Formations');
-        $crud->columns('nom_formation','titre_formation');
+        $crud->columns('nom_formation','titre_formation', 'id_type_formation');
+        $crud->set_relation('id_type_formation', 'type_formations', "nom_type_formation");
          
         $output = $crud->render();
          
