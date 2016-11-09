@@ -10,9 +10,9 @@ img {
 }
 
 .banniere {
-	display: flex;
 	align-items: flex-end;
 }
+
 .form-contact {
 	margin-top: 3em;
 	background-color: #F7F7F7;
@@ -24,18 +24,28 @@ img {
 
 .form-group {
 	margin-top: 30px;
-
 }
-.message-error {
-	margin-top: 3em;
-	margin-bottom: -3em;
-	padding: 1em 0em 1em;
-	background-color: #d9534f;
-	border: solid 1px #d9534f;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-	
-	color: white;
-	font-weight: bolder;
 
+.message-error {
+    margin-top: 3em;
+    margin-bottom: -3em;
+    padding: 1em 0em 1em;
+    background-color: #d9534f;
+    border: solid 1px #d9534f;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    animation-name: error;
+    animation-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+@keyframes error{
+
+    0%{opacity: 0;}
+    
+    100%{opacity: 1;}
+   
 }

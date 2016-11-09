@@ -9,13 +9,16 @@ CKEDITOR.editorConfig = function( config )
 	config.language = 'fr';
 	config.uiColor = '#F3F3F3';
 	config.entities_processNumerical = true;
-	
+	config.forcePasteAsPlainText = true;
 
 	config.toolbar_Basic =
 	[
-	    ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','Image','About']
+	    ['Bold', 'Italic' ,'-', 'NumberedList', 'BulletedList', 'Outdent' ,'Indent', '-', 'Link', 'Unlink','-','Image']
 	];
 
 	// Simplify the dialog windows.
-	config.removeDialogTabs = 'image:advanced;link:advanced';
+	config.removeDialogTabs = 'image:advanced;link:advanced;';
 };
+
+
+

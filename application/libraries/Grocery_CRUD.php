@@ -5178,7 +5178,7 @@ class Grocery_CRUD extends grocery_CRUD_States
 	 * @param string $upload_path
      * @return Grocery_CRUD
 	 */
-	public function set_field_upload($field_name, $upload_dir = '', $allowed_file_types = '')
+    public function set_field_upload($field_name, $upload_dir = '', $allowed_file_types = '')
 	{
 		$upload_dir = !empty($upload_dir) && substr($upload_dir,-1,1) == '/'
 						? substr($upload_dir,0,-1)

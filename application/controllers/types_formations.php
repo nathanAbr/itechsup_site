@@ -29,6 +29,7 @@ class Types_formations extends CI_Controller {
         $crud->set_table('type_formations');
         $crud->set_subject('Domaines de formations');
         $crud->columns('nom_type_formation','secteur_type_formation');
+        $crud->unset_delete();
          
         $output = $crud->render();
          

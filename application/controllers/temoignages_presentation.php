@@ -27,7 +27,11 @@ class Temoignages_presentation extends CI_Controller {
         $crud->set_theme('bootstrap');
         $crud->set_table('temoignages_presentation');
         $crud->set_subject('Témoignages de Mr HERVE');
-        $crud->columns('nom_temoignage_presentation','text_temoignage_presentation');
+        $crud->columns('nom_temoignage_presentation','text_temoignage_presentation', 'img_temoignage_presentation');
+        $crud->display_as('nom_temoignage_presentation', 'Nom')
+                ->display_as('text_temoignage_presentation', 'Témoignage')
+                ->display_as('img_temoignage_presentation', 'Photo');
+        $crud->set_field_upload('img_temoignage_presentation','../Itechsup/assets/img/images_temoignage/presentation');
          
         $output = $crud->render();
          

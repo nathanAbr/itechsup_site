@@ -13,12 +13,16 @@
     
         <header>
         <div class="container">
+            <hr class="row-featurette" />
             <div class="row banniere">
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <img class="img-responsive" alt="Responsive image" src="<?php echo base_url('assets/img/logo.png'); ?>"/>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-8">
-                    <h2 class="text-muted">Bienvenue sur l'espace d'administration d'Itechsup</h2>
+            </div>
+            <hr class="row-featurette" />
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h2 class="text-muted text-center">Bienvenue sur l'espace d'administration d'Itechsup</h2>
                 </div>
             </div>
         </div>

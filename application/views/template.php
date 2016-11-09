@@ -36,6 +36,11 @@
                                 }else{ echo site_url('profil/non'); }
                             ?>
                         ">Profile</a></li>
+                            <?php
+                                if($_SESSION['member-id'][0]->admin_utilisateur){
+                                    echo '<li><a href="'.site_url('profil/forget_pass').'">Mot de passe oublié</a></li>';
+                                }
+                            ?>
                         <li><a href="#">Help</a></li>
                         <li><a href="<?php echo site_url('disconnect'); ?>">Déconnexion</a></li>
                     </ul>
@@ -78,6 +83,7 @@
                         <li><a href="<?php echo site_url('offres'); ?>">Offres</a></li>
                         <li><a href="<?php echo site_url('carousel'); ?>">Carousel</a></li>
                         <li><a href="<?php echo site_url('trouver'); ?>">Nous trouver</a></li>
+                        <li><a href="<?php echo site_url('image_entete'); ?>">Entêtes des pages</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">

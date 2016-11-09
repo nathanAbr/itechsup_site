@@ -31,6 +31,8 @@ class Date_reunions_info extends CI_Controller {
         $crud->columns('date_reunion_information', 'id_reunion_information');
         $crud->set_relation('id_reunion_information', 'reunions_informations', "titre_reunion_information");
          
+        $crud->display_as('id_reunion_information','Réunion concernée ?');
+
         $output = $crud->render();
          
         $this->_example_output($output);

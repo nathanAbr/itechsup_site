@@ -29,6 +29,8 @@ class Carousel extends CI_Controller {
         $crud->set_table('carousel');
         $crud->set_subject('Slider');
         $crud->columns('img_carousel','titre_carousel', 'pos_carousel');
+
+        $crud->set_field_upload('img_carousel','../Itechsup/assets/img/carousel');
          
         $output = $crud->render();
          

@@ -1,10 +1,8 @@
 <div class="row">
     <?php if(isset($error)){ ?>
-<div class="col-xs-12 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-4 message-error">
-    
-        <h4 class="text-center"><?php echo $error; ?></h4>
-    
-</div>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-4 message-error">
+                <h4 class="text-center"><?php echo $error; ?></h4>
+        </div>
     <?php } ?>
     <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 form-contact">
         <h3 class="text-center text-muted">Connectez-vous</h3>
