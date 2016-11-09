@@ -91,6 +91,10 @@ a.lien-panel-footer {
 
 }
 
+.temoignages div div div div p{
+    text-align: justify;
+}
+
 a.lien-panel-footer:hover {
     text-decoration: none;
 }
@@ -106,7 +110,7 @@ a.lien-panel-footer:hover {
 @media (min-width: 768px) {
 
   /* Bump up size of carousel content */
-  .carousel-caption p {
+  .carousel-caption h3 {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;

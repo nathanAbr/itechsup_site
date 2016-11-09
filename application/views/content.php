@@ -6,7 +6,7 @@
             if(current_url() != site_url()){ ?>
                 <header id="img-page">
                     <?php foreach($images_pages as $image){ ?>
-                        <div class="marketing img_page" style="background-image:url(<?php echo base_url($image->lien_img_pages_head); ?>);">
+                        <div class="marketing img_page" style="background-image:url(<?php echo base_url('assets/img/images_pages/'.$image->lien_img_pages_head); ?>);">
                             <h1 class="text-center titre_img_page"><?php echo $image->titre_img_pages_head; ?></h1>
                         </div>
                     <?php } ?>
@@ -45,17 +45,22 @@
                                                 <div class="col-xs-3">
                                                     <div class="logo-accueil-footer"></div>
                                                 </div>
-                                                
+                                                <div class="col-xs-1">
+                                                </div>
                                                 <div class="col-xs-3 prestation-footer">
                                                     <h4>Liens utiles</h4>
-                                                    <a class="dropdown-toggle" href="<?php echo "#"; ?>"></a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/presentation'); ?>">Présentation</a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/offres'); ?>">Nos offres</a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/reunions_infos'); ?>">Nos réunions d'informations</a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/news'); ?>">Nos évènements</a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/portes_ouvertes'); ?>">Nos portes ouvertes</a></br>
+                                                    <a class="dropdown-toggle" href="<?php echo site_url('index.php/salons'); ?>">Nos salons</a></br>
                                                 </div>
-                                                
-                                                <div class="col-xs-3">
+                                                <div class="col-xs-2">
                                                     <h4>&Acirc; savoir</h4>
                                                     <p><a href="#">Mentions légales</a></p>
+                                                    <p><a href="<?php echo site_url('index.php/trouver'); ?>">Nous trouver</a></p>
                                                 </div>
-                                                
                                                 <div class="col-xs-3 social">
                                                     <h4>Social</h4>
                                                     <a href="#"><div class="social"><img src="<?php echo base_url('assets/img/social/png/64/1.png'); ?>" alt="" /></div></a>

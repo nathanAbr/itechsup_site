@@ -20,13 +20,14 @@ class Contact extends CI_Controller {
     {
         $this->form_validation->set_rules('nom', '"Nom"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('mail', '"E-mail"', 'trim|required|valid_email|xss_clean');
-        $this->form_validation->set_rules('adresse', '"Adresse"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('tel', '"Téléphone"', 'trim|required|xss_clean');
         $this->form_validation->set_rules('objet', '"Objet"', 'trim|required|xss_clean');   
         
         if ($this->form_validation->run() == false) {
             $data['header'] = $this->header->index();
             $data['img_pages'] = $this->images_pages->index('contact');
+            $data['active_pro'] = "active";
+            $data['active_part'] = "";
             $content = $this->load->view('contact', $data, true);
             $this->load->view('content', array('content'=>$content));
         }
@@ -36,6 +37,7 @@ class Contact extends CI_Controller {
             $data['img_pages'] = $this->images_pages->index('contact');
             $content = $this->load->view('contact_valide', $data, true);
             $this->load->view('content', array('content'=>$content));
+            $this->send_form();
         }
     }
     
@@ -50,6 +52,8 @@ class Contact extends CI_Controller {
         if ($this->form_validation->run() == false) {
             $data['header'] = $this->header->index();
             $data['img_pages'] = $this->images_pages->index('contact');
+            $data['active_pro'] = "";
+            $data['active_part'] = "active";
             $content = $this->load->view('contact', $data, true);
             $this->load->view('content', array('content'=>$content));
         }
@@ -59,12 +63,46 @@ class Contact extends CI_Controller {
             $data['img_pages'] = $this->images_pages->index('contact');
             $content = $this->load->view('contact_valide', $data, true);
             $this->load->view('content', array('content'=>$content));
+            $this->send_form_part();
         }
     }
     
-    public function send_form($to, $objet, $message)
+    public function send_form()
     {
+        $data = array();
+        $this->email->from('contact@itechsup.fr', 'Itechsup');
+        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->subject('Demande de contact (Professionnel)');
+        $data['nom'] = $_POST['nom'];
+        $data['prenom'] = '';
+        $data['tel'] = $_POST['tel'];
+        $data['mail'] = $_POST['mail'];
+        $data['subject'] = $_POST['objet'];
+        $data['sup'] = $_POST['comm'];
         
+        $message = $this->load->view('simple_mail_contact', $data,true);
+        
+        $this->email->message($message);
+        $this->email->send();
+    }
+    
+    public function send_form_part()
+    {
+        $data = array();
+        $this->email->from('contact@itechsup.fr', 'Itechsup');
+        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->subject('Demande de contact');
+        $data['nom'] = $_POST['nom_part'];
+        $data['prenom'] = $_POST['prenom_part'];
+        $data['tel'] = $_POST['tel_part'];
+        $data['mail'] = $_POST['mail_part'];
+        $data['subject'] = $_POST['objet_part'];
+        $data['sup'] = $_POST['comm_part'];
+        
+        $message = $this->load->view('simple_mail_contact', $data,true);
+        
+        $this->email->message($message);
+        $this->email->send();
     }
     
 }

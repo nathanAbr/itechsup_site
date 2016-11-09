@@ -29,7 +29,7 @@
                     <?php $active = "active"; ?>
                     <?php foreach($temoignage as $temoigne){ ?>
                     <div class="item <?php echo $active; ?>">
-                        <div class="img-temoignage" style="background-image: url(<?php echo base_url($temoigne->img_temoignage_presentation); ?>);"></div>
+                        <div class="img-temoignage" style="background-image: url(<?php echo base_url('assets/img/images_temoignage/presentation/'.$temoigne->img_temoignage_presentation); ?>);"></div>
                         <h2><?php echo $temoigne->nom_temoignage_presentation; ?></h2>
                         <p class="text-justify"><?php echo $temoigne->text_temoignage_presentation; ?></p>
                     </div>

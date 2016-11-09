@@ -8,7 +8,7 @@
         <div class="row bg-grey">
             <h2 class="text-muted nom-formation"><?php echo $form->nom_formation; ?></h2>
             <div class="col-md-4">
-                <img class="featurette-image img-responsive center-block" src="<?php echo base_url($form->img_formation); ?>" alt="<?php echo $form->titre_formation; ?>">
+                <img class="featurette-image img-responsive center-block" src="<?php echo base_url('assets/img/icones/icones_formations/'.$form->img_formation); ?>" alt="<?php echo $form->titre_formation; ?>">
             </div>
             <div class="col-md-8">
                 <p class="text-justify"><?php echo $form->resume_formation; ?></p>
@@ -90,7 +90,7 @@
                     <?php $active = "active"; ?>
                     <?php foreach($temoignage as $temoigne){ ?>
                     <div class="item <?php echo $active; ?>">
-                        <div class="img-temoignage" style="background-image: url(<?php echo base_url($temoigne->img_temoignage); ?>);"></div>
+                        <div class="img-temoignage" style="background-image: url(<?php echo base_url('assets/img/images_temoignage/formation/'.$temoigne->img_temoignage); ?>);"></div>
                         <h2><?php echo $temoigne->nom_temoignage; ?></h2>
                         <p class="text-justify"><?php echo $temoigne->text_temoignage; ?></p>
                     </div>

@@ -20,11 +20,11 @@
         <?php $active = "active"; ?>
         <?php foreach($slide as $img){ ?>
             <div class="item <?php echo $active; ?>">
-                <div class="img-carousel" style="background-image: url(<?php echo base_url($img->img_carousel); ?>);"></div>
+                <div class="img-carousel" style="background-image: url(<?php echo base_url('assets/img/carousel/'.$img->img_carousel); ?>);"></div>
                 <div class="container">
                     <div class="carousel-caption">
                         <h1><?php echo $img->titre_carousel; ?></h1>
-                        <p><?php echo $img->text_carousel; ?></p>
+                        <h3><?php echo $img->text_carousel; ?></h3>
                     </div>
                 </div>
             </div>

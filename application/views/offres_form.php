@@ -8,7 +8,7 @@
         ?>
         
         <a class="event-button" data-toggle="modal" data-target="#myModal<?php echo $offre->id_offre; ?>">
-            <div class="event-background">
+            <div class="event-background bg-grey">
                 <div class="row date-grille">
                     <div class="col-md-3 date">
                         <div class="date-event">
@@ -48,4 +48,5 @@
         } else {echo "<h2>Nous n'avons pas d'offres à pourvoir .</h2><hr class=\"featurette-divider\"> ";} ?>
 
     </div>
+</div>
 </div>

@@ -9,7 +9,7 @@
             </div>
             <div class="panel-body">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane" id="part">
+                    <div role="tabpanel" class="tab-pane <?php if(isset($active_part) && isset($active_part)){ echo $active_part; }?>" id="part">
                         <form method="POST" accept-charset="utf-8" action="<?php echo site_url('index.php/contact/valide_contact_part'); ?>" class="form-horizontal">
                             <div class="form-group">
                                 <label for="nom_part" class="col-sm-4 control-label">Nom</label>
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputComm_part" class="col-sm-4 control-label">Message</label>
+                                <label for="comm_part" class="col-sm-4 control-label">Message</label>
                                 <div class="col-sm-5" id="inputComm">
                                     <textarea class="form-control" rows="4" name="comm_part" placeholder="Informations supplémentaires" value="<?php echo set_value('comm_part'); ?>"></textarea>
                                 </div>
@@ -59,12 +59,12 @@
                             </div>
                         </form>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="pro">
+                    <div role="tabpanel" class="tab-pane <?php if(isset($active_pro) && isset($active_part)){ echo $active_pro; }?>" id="pro">
                         <form method="POST" accept-charset="utf-8" action="<?php echo site_url('index.php/contact/valide_contact_pro'); ?>" class="form-horizontal">
                             <div class="form-group">
-                                <label for="nom" class="col-sm-4 control-label">Nom</label>
+                                <label for="nom" class="col-sm-4 control-label">Société</label>
                                 <div class="col-sm-5">
-                                    <input type="text" name="nom" id="nom" placeholder="Nom" class="form-control" value="<?php echo set_value('nom'); ?>" />
+                                    <input type="text" name="nom" id="nom" placeholder="Société" class="form-control" value="<?php echo set_value('nom'); ?>" />
                                     <?php echo form_error('nom'); ?>
                                 </div>
                             </div>
@@ -82,11 +82,11 @@
                                     <?php echo form_error('tel'); ?>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="tel" class="col-sm-4 control-label">Adresse</label>
+                            <div class="form-group" style="display:none;">
+                                <label for="prenom" class="col-sm-4 control-label">Adresse</label>
                                 <div class="col-sm-5">
-                                    <input type="adresse" class="form-control" id="adresse" placeholder="Adresse" name="adresse" value="<?php echo set_value('adresse'); ?>" />
-                                    <?php echo form_error('adresse'); ?>
+                                    <input type="adresse" class="form-control" id="adresse" placeholder="Adresse" name="prenom" value="<?php echo set_value('prenom'); ?>" />
+                                    <?php echo form_error('prenom'); ?>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputComm" class="col-sm-4 control-label">Commentaires</label>
+                                <label for="comm" class="col-sm-4 control-label">Commentaires</label>
                                 <div class="col-sm-5" id="inputComm">
                                     <textarea class="form-control" rows="4" name="comm" placeholder="Informations supplémentaires" value="<?php echo set_value('comm'); ?>"></textarea>
                                 </div>

@@ -163,6 +163,15 @@
 .presentation h2 {
   color: #EB5E1A;
 }
+
+.ri-background{
+  margin-top: 30px;
+  padding: 1em 1em 1em;
+}
+
+.ri-background h2{
+  margin-bottom: 30px;
+}
 /* FORMULAIRES
 -------------------------------------------------- */
 form .form-group p{
@@ -170,4 +179,15 @@ form .form-group p{
 }
 form#form_candidater{
     padding-top: 30px;
+}
+
+.candidater .form-group {
+  margin: 0em 1em 1em;
+
+
+}
+
+.offres {
+  margin-top: 15px;
+ box-shadow: 1px 2px 12px rgba(100,100,100, 0.6);
 }

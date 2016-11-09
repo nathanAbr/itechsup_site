@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2 candidater">
-        <form method="POST" accept-charset="utf-8" action="<?php echo site_url('index.php/candidater/valide_form'); ?>" class="form-horizontal" id="form_candidater">
+        <form method="POST" accept-charset="utf-8" action="<?php echo site_url('index.php/candidater/valide_form'); ?>" class="form-horizontal" id="form_candidater" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="nom" class="col-sm-4 control-label">Nom</label>
                 <div class="col-sm-6">
@@ -53,7 +53,7 @@
             <div class="form-group">
                 <label for="diplome" class="col-sm-4 control-label">Dernier diplôme obtenu</label>
                 <div class="col-sm-6">
-                    <select class="form-control" id="inputExter" name="inputExter">
+                    <select class="form-control" id="inputExter" name="diplome">
                         <option>BAC TECHNOLOGIQUE</option>
                         <option>BAC G&Eacute;N&Eacute;RAL</option>
                         <option>BAC PROFESSIONNEL</option>
@@ -68,7 +68,7 @@
             <div class="form-group">
                 <label for="inputComm" class="col-sm-4 control-label">Commentaires</label>
                 <div class="col-sm-6" id="inputComm">
-                    <textarea class="form-control" rows="3" name="comm" placeholder="Informations supplémentaires" value="<?php echo set_value('comm'); ?>"></textarea>
+                    <textarea class="form-control" rows="3" name="inputComm" placeholder="Informations supplémentaires" value="<?php echo set_value('inputComm'); ?>"></textarea>
                 </div>
             </div>
             <div class="form-group">
