@@ -57,7 +57,7 @@ class Portes_ouvertes extends CI_Controller {
     public function send_form()
     {
         $this->email->from('contact@itechsup.fr', 'Itechsup');
-        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->to('administration@itechsup.fr');
         $this->email->cc($_POST['mail']);
 
         $this->email->subject('Participation à la porte ouverte du '.$_POST['subject']);

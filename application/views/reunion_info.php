@@ -18,7 +18,7 @@
         <div class="modal fade" id="myModal<?php echo $ri->id_reunion_information; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-image: url(<?php echo base_url('assets/img/images_pages/developer.png'); ?>);">
+                    <div class="modal-header" style="background-image: url(<?php echo base_url('assets/img/images_pages/info.jpg'); ?>);">
                         <button type="button" class="close" data-dimdiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel"><?php echo $ri->titre_reunion_information; ?></h4>
                     </div>

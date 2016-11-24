@@ -45,21 +45,26 @@
 <!-- PRESENTATION -->
 <section id="presentation">
     <div class="container marketing">
-        <div class="row">
-            <div class="col-md-4 presentation-element">
+        <div class="row text-center">
+            <div class="col-md-3 presentation-element">
                 <img class="img-circle" src="assets/img/presentation/feature9.png" alt="Generic placeholder image" width="110" height="110">
                 <h2>Itechsup</h2>
                 <a href="<?php echo site_url('index.php/presentation'); ?>">Présentation du centre</a>
             </div>
-            <div class="col-md-4 presentation-element">
+            <div class="col-md-3 presentation-element">
+                <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
+                <h2>Nos prochaines rentrés</h2>
+                <a href="<?php echo site_url('index.php/rentres'); ?>">Nos prochaines rentrés</a>
+            </div>
+            <div class="col-md-3 presentation-element">
                 <img class="img-circle" src="assets/img/presentation/feature8.png" alt="Generic placeholder image" width="110" height="110">
-                <h2>Candidature</h2>
+                <h2>Pré-inscription</h2>
                 <a href="<?php echo site_url('index.php/candidater'); ?>">Rejoignez-nous</a>
             </div>
-            <div class="col-md-4 presentation-element">
-                <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
-                <h2>Vie du centre</h2>
-                <a href="<?php echo site_url('index.php/news'); ?>">Les évènements à venir</a>
+            <div class="col-md-3 presentation-element">
+                <img class="img-circle idalis" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
+                <h2>Formations courtes</h2>
+                <a href="http://www.idalis.fr">Idalis</a>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>
         </div>
@@ -72,7 +77,7 @@
         <h1>Nos formations</h1>
         <h2>Notre école propose des formations diplômantes du BAC +2 au BAC +5</h2>
     </div>
-    <div class="container marketing">
+    <div class="container-fluid marketing">
         <div class="row text-formation">
         <?php foreach($type_formation as $type){ ?>
             <div class="col-md-4">
@@ -97,7 +102,7 @@
 <section id="evenements">
     <div class="container marketing">
     <div class="row">
-    <h1>Derniers événements</h1>
+    <h1>Prochains événements</h1>
     <?php foreach($news as $new){ ?>
         <div class="col-md-4 text-center">
             <h3><?php echo $new->titre_event; ?></h3>

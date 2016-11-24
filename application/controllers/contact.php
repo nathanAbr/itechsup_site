@@ -71,7 +71,7 @@ class Contact extends CI_Controller {
     {
         $data = array();
         $this->email->from('contact@itechsup.fr', 'Itechsup');
-        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->to('administration@itechsup.fr');
         $this->email->subject('Demande de contact (Professionnel)');
         $data['nom'] = $_POST['nom'];
         $data['prenom'] = '';
@@ -90,7 +90,7 @@ class Contact extends CI_Controller {
     {
         $data = array();
         $this->email->from('contact@itechsup.fr', 'Itechsup');
-        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->to('administration@itechsup.fr');
         $this->email->subject('Demande de contact');
         $data['nom'] = $_POST['nom_part'];
         $data['prenom'] = $_POST['prenom_part'];

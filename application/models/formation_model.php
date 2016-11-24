@@ -21,4 +21,12 @@ class Formation_model extends CI_Model
                     ->get()
                     ->result();
     }
+    
+    public function get_all_formation()
+    {
+        return $this->db->select('*')
+                    ->from($this->table)
+                    ->get()
+                    ->result();
+    }
 }

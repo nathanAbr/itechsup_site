@@ -61,14 +61,15 @@
         <div class="container">
             <a href="javascript:;" class="menu_btn glyphicon glyphicon-menu-left"></a>
             <div class="row banniere">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <img src="<?php echo base_url('assets/img/logo/logo.png');?>" alt="Itechsup" id="logo_header"/>
                 </div>
-                <div class="col-md-6 banniere-social">
+                <div class="col-md-5 banniere-social">
                     <a href="https://www.facebook.com/itechsupformation/?fref=ts" target="_blank" class="btn btn-social-icon btn-md btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-facebook"></i></a>
                     <a href="https://fr.linkedin.com/in/itech-sup-003949105" target="_blank" class="btn btn-social-icon btn-md btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-linkedin"></i></a>
-                    <a href="http://foad.itechsup.fr" class="btn btn-warning" role="button">Mon espace</a>
-                </div>
+                    
+                    <a href="http://www.idalis.fr" target="_blank"><img width="70" height="25"src="<?php echo base_url('assets/img/logo/logo_idalis.png');?>" alt="Idalis"></a>
+                </div>          
             </div>
         </div>
         <!-- NAVBAR -->
@@ -87,9 +88,21 @@
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="<?php echo site_url('index.php/'); ?>">Accueil</a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">Itechsup <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                                 <li><a href="<?php echo site_url('index.php/presentation'); ?>">Présentation</a></li>
-                                <li><a href="<?php echo site_url('index.php/partenaires'); ?>">Ils nous font confiance</a></li>
+                                <!--<li><a href="<?php echo site_url('index.php/partenaires'); ?>">Ils nous font confiance</a></li>-->
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" tabindex="-1">Vie du centre</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="<?php echo site_url('index.php/news'); ?>">&Eacute;vénements</a></li> 
+                                        <li><a href="<?php echo site_url('index.php/salons'); ?>">Salons</a></li>   
+                                        <li><a href="<?php echo site_url('index.php/reunions_infos'); ?>">Réunions d'information</a></li>
+                                        <li><a href="<?php echo site_url('index.php/portes_ouvertes'); ?>">Portes ouvertes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo site_url('index.php/rentres'); ?>">Nos prochaines rentrées</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Formations <b class="caret"></b></a>
@@ -97,6 +110,7 @@
                                 <?php foreach($header as $header_formation){ ?>
                                     <li><a href="<?php echo site_url('index.php/formation/formations/'.$header_formation->id_type_formation); ?>"><?php echo $header_formation->nom_type_formation; ?></a></li>
                                 <?php } ?>
+                                
                             </ul>
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">L'Alternance <b class="caret"></b></a>
@@ -104,25 +118,22 @@
                                 <?php foreach($contrat as $contrat_header){ ?>
                                     <li><a href="<?php echo site_url('index.php/contrats/contrat/'.$contrat_header->id_contrat); ?>"><?php echo $contrat_header->nom_contrat; ?></a></li>
                                 <?php } ?>
+                                <li><a href="<?php echo site_url('index.php/offres'); ?>">Offre</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vie du centre <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo site_url('index.php/news'); ?>">&Eacute;vénements</a></li> 
-                                <li><a href="<?php echo site_url('index.php/salons'); ?>">Salons</a></li>   
-                                <li><a href="<?php echo site_url('index.php/reunions_infos'); ?>">Réunions d'information</a></li>
-                                <li><a href="<?php echo site_url('index.php/portes_ouvertes'); ?>">Portes ouvertes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo site_url('index.php/offres'); ?>">Offre</a></li>
+                        
+                        
                         <li class="dropdown"><a class="dropdown-toggle drop menu" data-toggle="dropdown" href="#">Contact <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo site_url('index.php/contact'); ?>">Nous contacter</a></li>
                                 <li><a href="<?php echo site_url('index.php/trouver'); ?>">Nous trouver</a></li>
-                                <li><a href="<?php echo site_url('index.php/candidater'); ?>">Demande de candidature</a></li>
+                                <li><a href="<?php echo site_url('index.php/candidater'); ?>">Pré-inscription</a></li>
                             </ul>
                         </li>
-                        <li class="mon_espace"><a href="#" class="btn btn-warning" role="button">Mon espace</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="espace_formateur"><a href="http://foad.itechsup.fr" role="button">Formateur, rejoignez-nous !</a></li>
+                        <a class="btn btn-warning navbar-btn" href="http://foad.itechsup.fr" role="button">Espace stagiaire</a>
                     </ul>
                 </div>
             </div>

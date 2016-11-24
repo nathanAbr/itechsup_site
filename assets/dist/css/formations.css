@@ -54,12 +54,11 @@
 .modal-header {
 
     background-repeat: no-repeat;
-	
+	background-position: center;
 	background-size: cover;
-	background-color: rgba(255, 80, 0,0.9);
-	background-blend-mode: multiply;
+	background-color: rgba(180, 70, 0,0.9);
+	background-blend-mode: color-burn;
 	padding: 1.8em 0em 1.8em;
-
 }
 
 .modal-body {

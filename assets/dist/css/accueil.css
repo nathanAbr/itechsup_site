@@ -27,6 +27,11 @@
 .img-circle{
     background-color: #FF5000;
 }
+
+.img-circle.idalis{
+    background-color: #339CA4;
+}
+
 .img-rounded{
     background-color: #FF5000;
 }
@@ -118,10 +123,6 @@ a.lien-panel-footer:hover {
   .navbar-header > a > img{
     display: none;
   }
-
-  li.mon_espace {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -137,11 +138,9 @@ a.lien-panel-footer:hover {
   .menu_btn {
     top : 60px;
   }
-  li.mon_espace {
-    margin-left: 20px;
-    margin-right: 20px;
+  li.espace_formateur {
+  
     margin-top: 5px;
-
     }
 }
 

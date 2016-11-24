@@ -87,7 +87,7 @@ class Candidater extends CI_Controller {
         $this->email->set_crlf("\r\n");
         
         $this->email->from('contact@itechsup.fr', 'Itechsup');
-        $this->email->to('informatique@sofra-recouvrements.com');
+        $this->email->to('administration@itechsup.fr');
         $data_mail['nom'] = $_POST['nom'];
         $data_mail['prenom'] = $_POST['prenom'];
         $data_mail['tel'] = $_POST['tel'];
