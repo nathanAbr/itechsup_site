@@ -70,7 +70,7 @@
                                             </div>
                                             <hr class="" />
                                             <div class="row">
-                                                <p>Copyright - &copy; 2015. Tous droits réservés à ITECHSUP</p>
+                                                <p>Copyright - &copy; 2016. Tous droits réservés à ITECHSUP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -84,5 +84,12 @@
         <script src="<?php echo base_url('assets/js/jquery-1.12.3.min.js');?>"></script>
         <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
         <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/dist/js/jquery.sticky.js');?>"></script>
+        
+          <script>
+            $(window).load(function(){
+              $("#sticker").sticky({ topSpacing: 0, center:true, className:"hey" });
+            });
+          </script>
     </body>
 </html>

@@ -28,7 +28,7 @@
                             <div class="form-group">
                                 <label for="mail_part" class="col-sm-4 control-label">E-mail</label>
                                 <div class="col-sm-5">
-                                    <input type="mail" class="form-control" id="mail_part" placeholder="E-mail" name="mail_part" value="<?php echo set_value('mail_part'); ?>" />
+                                    <input type="mail" class="form-control" id="mail_part" placeholder="E-mail" name="mail_part" value="<?php echo set_value('mail_part'); ?>"/>
                                     <?php echo form_error('mail_part'); ?>
                                 </div>
                             </div>

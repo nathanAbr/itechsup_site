@@ -24,12 +24,21 @@
 
 /* SECTION PRESENTATION
 -------------------------------------------------- */
+#presentation{
+    width: auto;
+    
+    background-color: #F6F7F7; 
+}
+.presentation-element{
+    margin-bottom: 50px;
+}
 .img-circle{
     background-color: #FF5000;
 }
 
 .img-circle.idalis{
     background-color: #339CA4;
+    border: 4px #339CA4 solid;
 }
 
 .img-rounded{
@@ -41,6 +50,10 @@
 
 /* SECTION FORMATION
 ------------------------- */
+
+#formations{
+    background-color: #F6F7F7; 
+}
 .img-formation {
     background-position: center center;
     background-size: cover;
@@ -50,59 +63,62 @@
     padding: 4em 0em 6em;
     color: white;
 }
-.panel-perso {
+.panel-perso{
     margin-top: -15px;
+    margin-bottom: 50px;
     border: 0px !important;
     transition: box-shadow 0.5s;
-    background-color: white !important;
-    box-shadow: 1px 2px 6px rgba(100,100,100, 0.9);
-    
+}
+.panel-perso:hover{
+ box-shadow: 1px 2px 60px rgba(100,100,100, 0.9);
+}
+.accueil{
+    background-color: #535353;
+    color: white;
+    border-top: solid #FF5000 6px;
+    height: 120px;
 }
 
-/* Grossisement de l'icone "+" au passage de la souris dans le panel */
-.panel-perso span{
+.panel-footer-perso {
 
+  text-align: center;
+  padding: 2.5em 0em 3em;
+  border: none !important;
+}
+.panel-footer-perso >.btn{
 
-    -webkit-transition: font-size 0.5s, -webkit-transform 0.5s;
-  transition: font-size 0.5s, transform 0.5s;
-  text-shadow:0px 0px 5px #444444;
+  padding: 1.3em 1em 0.5em;
+  background: white;
+  color: black;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid black;
+  min-height: 40px;
+  outline: 0;
+}
 
+.panel-footer-perso:hover >.btn{
+    color: white;
+    background-color:#FF5000;
+}
 
-}
-.panel-perso:hover span{
-   font-size: 60px;
-    -webkit-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
-}
-.panel > .panel-heading {
-    background-color: #f7f7f7;
-    color: #FF5000;
-    border-color: #FF5000;
-    border-bottom: solid 3px;
-}
-.panel > .panel-heading.accueil {
-
-    height: 100px;
-}
-.panel > .panel-footer {
-    background: linear-gradient(141deg, #444444 0%, #4c4c4c 41%, #555555 65%);
-    color: #FF5000;
-    border-color: #FF5000;
-    box-shadow: 1px 2px 12px rgba(100,100,100, 0.6);
-}
-a.lien-panel-footer {
+a.lien-panel {
     color: #FF5000;
     background-color: #555555;
 
 }
 
+a.lien-panel:hover {
+    text-decoration: none;
+}
 .temoignages div div div div p{
     text-align: justify;
 }
 
-a.lien-panel-footer:hover {
-    text-decoration: none;
-}
 /* Resserer les vignettes */
 .text-formation {
     margin-left: 2.1em;

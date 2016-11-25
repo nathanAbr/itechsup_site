@@ -67,12 +67,11 @@
                 <div class="col-md-5 banniere-social">
                     <a href="https://www.facebook.com/itechsupformation/?fref=ts" target="_blank" class="btn btn-social-icon btn-md btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-facebook"></i></a>
                     <a href="https://fr.linkedin.com/in/itech-sup-003949105" target="_blank" class="btn btn-social-icon btn-md btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-linkedin"></i></a>
-                    
-                    <a href="http://www.idalis.fr" target="_blank"><img width="70" height="25"src="<?php echo base_url('assets/img/logo/logo_idalis.png');?>" alt="Idalis"></a>
                 </div>          
             </div>
         </div>
         <!-- NAVBAR -->
+        <div id="sticker">
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
@@ -132,10 +131,11 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="espace_formateur"><a href="http://foad.itechsup.fr" role="button">Formateur, rejoignez-nous !</a></li>
+                        <li class="espace_formateur"><a href="<?php echo site_url('index.php/contact_formateur'); ?>" role="button">Formateur, rejoignez-nous !</a></li>
                         <a class="btn btn-warning navbar-btn" href="http://foad.itechsup.fr" role="button">Espace stagiaire</a>
                     </ul>
                 </div>
             </div>
         </nav>
+        </div>
     </header>

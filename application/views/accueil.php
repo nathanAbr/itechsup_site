@@ -47,22 +47,22 @@
     <div class="container marketing">
         <div class="row text-center">
             <div class="col-md-3 presentation-element">
-                <img class="img-circle" src="assets/img/presentation/feature9.png" alt="Generic placeholder image" width="110" height="110">
+                <img class="img-circle" src="assets/img/presentation/feature9.png" alt="Présentation" width="110" height="110">
                 <h2>Itechsup</h2>
                 <a href="<?php echo site_url('index.php/presentation'); ?>">Présentation du centre</a>
             </div>
             <div class="col-md-3 presentation-element">
-                <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
+                <img class="img-circle" src="assets/img/presentation/feature7.png" alt="Rentrées" width="110" height="110">
                 <h2>Nos prochaines rentrés</h2>
                 <a href="<?php echo site_url('index.php/rentres'); ?>">Nos prochaines rentrés</a>
             </div>
             <div class="col-md-3 presentation-element">
-                <img class="img-circle" src="assets/img/presentation/feature8.png" alt="Generic placeholder image" width="110" height="110">
+                <img class="img-circle" src="assets/img/presentation/feature8.png" alt="Pré-inscription" width="110" height="110">
                 <h2>Pré-inscription</h2>
                 <a href="<?php echo site_url('index.php/candidater'); ?>">Rejoignez-nous</a>
             </div>
             <div class="col-md-3 presentation-element">
-                <img class="img-circle idalis" src="assets/img/presentation/feature7.png" alt="Generic placeholder image" width="110" height="110">
+                <img class="img-circle idalis" src="assets/img/logo/logo_idalis.png" alt="Idalis" width="110" height="110">
                 <h2>Formations courtes</h2>
                 <a href="http://www.idalis.fr">Idalis</a>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
@@ -80,15 +80,12 @@
     <div class="container-fluid marketing">
         <div class="row text-formation">
         <?php foreach($type_formation as $type){ ?>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="panel panel-perso">
-                    <div class="panel-heading accueil"><h2 class="text-center"><?php echo $type->nom_type_formation; ?></h2></div>
-                    <div class="panel-footer">
-                        <p class="text-center">En savoir</p>
-                        <a class="lien-panel-footer" href="<?php echo site_url('index.php/formation/formations/'.$type->id_type_formation); ?>">
-                            <span class="glyphicon glyphicon-plus-sign"></span>
-                        </a>
-                    </div>
+                    <a class="lien-panel" href="<?php echo site_url('index.php/formation/formations/'.$type->id_type_formation); ?>">
+                        <div class="panel-heading accueil"><h2 class="text-center"><?php echo $type->nom_type_formation; ?></h2></div>
+                        <div class="panel-footer-perso"><button class="btn"><p>EN SAVOIR PLUS</p></button></div>    
+                    </a>
                 </div>
             </div>
         <?php } ?>

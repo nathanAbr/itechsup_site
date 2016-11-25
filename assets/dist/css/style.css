@@ -42,10 +42,11 @@
     color: #FF5000;
 }
 .espace_formateur a{
-  color: #FF5000 !important;
+  color: #ff5400 !important;
+  font-weight: bolder;
 }
-.espace_formateur a:hover{
-  color: #FF5000 !important;
+.espace_formateur:hover{
+  background-color: #2F2F2F !important;
 }
 /* NAVBAR
 -------------------------------------------------- */
