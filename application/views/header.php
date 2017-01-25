@@ -52,7 +52,6 @@
                     </div>
                 </div>
             <?php } ?>-->
-
         </ul>
     </div>
     <div id="page">
@@ -71,7 +70,7 @@
             </div>
         </div>
         <!-- NAVBAR -->
-        <div id="sticker">
+        
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
@@ -120,8 +119,7 @@
                                 <li><a href="<?php echo site_url('index.php/offres'); ?>">Offre</a></li>
                             </ul>
                         </li>
-                        
-                        
+
                         <li class="dropdown"><a class="dropdown-toggle drop menu" data-toggle="dropdown" href="#">Contact <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo site_url('index.php/contact'); ?>">Nous contacter</a></li>
@@ -137,5 +135,5 @@
                 </div>
             </div>
         </nav>
-        </div>
+        
     </header>

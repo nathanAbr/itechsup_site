@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img class="featurette-image img-responsive center-block" src="<?php echo base_url($form->img_formation); ?>" alt="<?php echo $form->titre_formation; ?>">
+                <img class="featurette-image img-responsive center-block" src="<?php echo base_url('assets/img/icones/icones_formations/'.$form->img_formation); ?>" alt="<?php echo $form->titre_formation; ?>">
             </div>
         </div>
             <?php $inverse = true; } ?>

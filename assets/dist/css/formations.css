@@ -3,9 +3,11 @@
 }
 
 .temoignages {
-	margin-top: 32px;
+	border-top: solid #FF5000 6px;
+	margin-top: 25px;
 	margin-bottom: 50px;
 	box-shadow: 10px 10px 50px rgba(0,0,0, 0.6);
+	background: linear-gradient(141deg, #666666 0%, #555555 51%, #444444 75%);
 	
 }
 .temoignages p{
@@ -18,19 +20,17 @@
 }
 
 .temoignages h2 {
-	background-color: 
+	color: white;
 }
 
 .temoignages .item {
 
 	margin-top: 5px;
-	background-color: #555555;
 	padding-top: 10px;
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-bottom: 10px;
 	margin-bottom: 10px; 
-	box-shadow: 10px 0px 20px 2px #474747 inset;
 }
 
 .img-temoignage{
