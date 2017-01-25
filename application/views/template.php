@@ -42,6 +42,7 @@
                                 }
                             ?>
                         <li><a href="#">Help</a></li>
+                        <li><a href="<?php echo site_url('myPdf'); ?>">Fiche de comm</a></li>
                         <li><a href="<?php echo site_url('disconnect'); ?>">Déconnexion</a></li>
                     </ul>
                 </div>
